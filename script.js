@@ -1,4 +1,4 @@
-const DOWNLOAD_URL = "#";
+const DOWNLOAD_URL = "https://github.com/Diogocas/liveplay-frontend/releases/latest/download/LivePlay-Setup.exe";
 const DISCORD_URL = "#";
 
 document.getElementById("downloadButton")?.addEventListener("click", (event) => {

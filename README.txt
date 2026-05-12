@@ -42,3 +42,6 @@ Showcase polish V2:
 Atualização:
 - Adicionado liveplay-dashboard-premium.png
 - Preview fake do topo substituído por imagem real premium do LivePlay
+
+
+Botão de download configurado para GitHub Releases.
