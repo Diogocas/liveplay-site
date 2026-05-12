@@ -544,3 +544,96 @@ details p { margin: 12px 0 0; }
     flex-basis: 28px;
   }
 }
+
+
+
+/* Premium cinematic background */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(104, 89, 255, 0.30), transparent 28%),
+    radial-gradient(circle at 85% 18%, rgba(0, 214, 255, 0.18), transparent 24%),
+    radial-gradient(circle at 75% 82%, rgba(255, 106, 0, 0.16), transparent 24%),
+    radial-gradient(circle at 30% 75%, rgba(0, 255, 170, 0.10), transparent 22%),
+    linear-gradient(180deg, #050816 0%, #060b1b 45%, #050714 100%);
+  filter: saturate(120%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  opacity: .12;
+  background-image:
+    linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+  background-size: 38px 38px;
+  mask-image: radial-gradient(circle at center, black 20%, transparent 90%);
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  left: 50%;
+  top: -500px;
+  transform: translateX(-50%);
+  background:
+    radial-gradient(circle, rgba(98, 111, 255, 0.24) 0%, rgba(98,111,255,0.08) 35%, transparent 70%);
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+.feature-card,
+.pricing-card,
+.compat-pill,
+.hero-panel,
+.stat-card {
+  backdrop-filter: blur(18px);
+  background: linear-gradient(
+    180deg,
+    rgba(18, 23, 45, 0.78),
+    rgba(8, 12, 28, 0.88)
+  ) !important;
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow:
+    0 10px 40px rgba(0,0,0,.30),
+    inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+.hero h1 {
+  text-shadow:
+    0 0 24px rgba(116, 126, 255, 0.25),
+    0 10px 40px rgba(0,0,0,.55);
+}
+
+.compatibility,
+.features,
+.pricing,
+.faq,
+.footer {
+  position: relative;
+}
+
+.compatibility::before,
+.features::before,
+.pricing::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(99,102,241,.06), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(14,165,233,.05), transparent 35%);
+  pointer-events: none;
+}
