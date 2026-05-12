@@ -15,8 +15,14 @@ Como usar:
 Também pode substituir textos, preço e recursos direto no index.html.
 
 
-Atualização V3:
-- favicon LivePlay
-- imagens Minecraft/GTA nos cards
-- ícones premium na compatibilidade
-- correção de texto duplicado nos badges
+Arquivos adicionais:
+- liveplay-icon.ico
+- minecraft.png
+- gta.png
+
+
+Atualização V4:
+- logo real do LivePlay no topo
+- ícones reais nos badges de compatibilidade
+- correção visual dos badges
+- imagens Minecraft/GTA mantidas nos cards

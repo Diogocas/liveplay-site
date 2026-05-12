@@ -470,7 +470,20 @@ details p { margin: 12px 0 0; }
 }
 
 
-/* LivePlay real assets + compatibility icons */
+/* LivePlay real assets + polished icons */
+.brand-mark.logo-img {
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(107,111,255,.26), rgba(57,230,182,.22));
+}
+
+.brand-mark.logo-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Game cards */
 .game-feature {
   position: relative;
   overflow: hidden;
@@ -489,6 +502,7 @@ details p { margin: 12px 0 0; }
   box-shadow: 0 18px 40px rgba(0,0,0,0.26);
 }
 
+/* Compatibility pills with real icons */
 .compat-grid {
   align-items: center;
 }
@@ -496,50 +510,22 @@ details p { margin: 12px 0 0; }
 .compat-pill {
   display: inline-flex !important;
   align-items: center;
-  gap: 9px;
-  min-height: 48px;
-  padding: 8px 15px !important;
+  gap: 10px;
+  min-height: 50px;
+  padding: 8px 16px 8px 10px !important;
+  white-space: nowrap;
 }
 
 .compat-pill img {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
   border-radius: 999px;
   object-fit: cover;
+  display: block;
+  background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.16);
   box-shadow: 0 8px 18px rgba(0,0,0,0.24);
-}
-
-.compat-icon {
-  width: 28px;
-  height: 28px;
-  border-radius: 999px;
-  display: inline-grid;
-  place-items: center;
-  font-size: 15px;
-  font-weight: 950;
-  flex: 0 0 auto;
-  border: 1px solid rgba(255,255,255,0.14);
-}
-
-.compat-pill.obs .compat-icon {
-  background: radial-gradient(circle at 30% 25%, #ffffff, #2c2c34 38%, #050507 100%);
-  color: #fff;
-}
-
-.compat-pill.tiktok .compat-icon {
-  background: linear-gradient(135deg, #25f4ee, #fe2c55);
-  color: #fff;
-}
-
-.compat-pill.windows .compat-icon {
-  background: linear-gradient(135deg, #00a4ef, #0078d4);
-  color: #fff;
-}
-
-.compat-pill.future .compat-icon {
-  background: linear-gradient(135deg, #6b6fff, #39e6b6);
-  color: #fff;
 }
 
 @media (max-width: 760px) {
@@ -549,6 +535,12 @@ details p { margin: 12px 0 0; }
 
   .compat-pill {
     min-height: 44px;
-    padding: 7px 12px !important;
+    padding: 7px 12px 7px 8px !important;
+  }
+
+  .compat-pill img {
+    width: 28px;
+    height: 28px;
+    flex-basis: 28px;
   }
 }
