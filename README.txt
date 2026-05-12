@@ -37,3 +37,8 @@ Showcase polish V2:
 - dashboard menos cortado
 - cards da seção Em ação mais compactos
 - imagens com proporção melhor no desktop e mobile
+
+
+Atualização:
+- Adicionado liveplay-dashboard-premium.png
+- Preview fake do topo substituído por imagem real premium do LivePlay
