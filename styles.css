@@ -470,7 +470,7 @@ details p { margin: 12px 0 0; }
 }
 
 
-/* LivePlay real assets */
+/* LivePlay real assets + compatibility icons */
 .game-feature {
   position: relative;
   overflow: hidden;
@@ -489,17 +489,66 @@ details p { margin: 12px 0 0; }
   box-shadow: 0 18px 40px rgba(0,0,0,0.26);
 }
 
-.compat-game {
-  display: inline-flex !important;
+.compat-grid {
   align-items: center;
-  gap: 10px;
-  padding-left: 10px !important;
 }
 
-.compat-game img {
-  width: 34px;
-  height: 34px;
+.compat-pill {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 9px;
+  min-height: 48px;
+  padding: 8px 15px !important;
+}
+
+.compat-pill img {
+  width: 30px;
+  height: 30px;
   border-radius: 999px;
   object-fit: cover;
   border: 1px solid rgba(255,255,255,0.16);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.24);
+}
+
+.compat-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  display: inline-grid;
+  place-items: center;
+  font-size: 15px;
+  font-weight: 950;
+  flex: 0 0 auto;
+  border: 1px solid rgba(255,255,255,0.14);
+}
+
+.compat-pill.obs .compat-icon {
+  background: radial-gradient(circle at 30% 25%, #ffffff, #2c2c34 38%, #050507 100%);
+  color: #fff;
+}
+
+.compat-pill.tiktok .compat-icon {
+  background: linear-gradient(135deg, #25f4ee, #fe2c55);
+  color: #fff;
+}
+
+.compat-pill.windows .compat-icon {
+  background: linear-gradient(135deg, #00a4ef, #0078d4);
+  color: #fff;
+}
+
+.compat-pill.future .compat-icon {
+  background: linear-gradient(135deg, #6b6fff, #39e6b6);
+  color: #fff;
+}
+
+@media (max-width: 760px) {
+  .feature-game-img {
+    height: 108px;
+  }
+
+  .compat-pill {
+    min-height: 44px;
+    padding: 7px 12px !important;
+  }
 }

@@ -13,3 +13,10 @@ Como usar:
 3. Se quiser, coloque um vídeo real na seção "Demo visual".
 
 Também pode substituir textos, preço e recursos direto no index.html.
+
+
+Atualização V3:
+- favicon LivePlay
+- imagens Minecraft/GTA nos cards
+- ícones premium na compatibilidade
+- correção de texto duplicado nos badges
