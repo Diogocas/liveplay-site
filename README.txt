@@ -26,3 +26,8 @@ Atualização V4:
 - ícones reais nos badges de compatibilidade
 - correção visual dos badges
 - imagens Minecraft/GTA mantidas nos cards
+
+
+Atualização Showcase:
+- seção LivePlay em ação
+- screenshots reais do dashboard, overlays, ranks, cofrinho, GTA V e Minecraft
