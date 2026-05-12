@@ -31,3 +31,9 @@ Atualização V4:
 Atualização Showcase:
 - seção LivePlay em ação
 - screenshots reais do dashboard, overlays, ranks, cofrinho, GTA V e Minecraft
+
+
+Showcase polish V2:
+- dashboard menos cortado
+- cards da seção Em ação mais compactos
+- imagens com proporção melhor no desktop e mobile
