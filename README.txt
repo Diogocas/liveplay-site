@@ -1,40 +1,36 @@
-LivePlay Site Oficial — versão ajustada
+LivePlay Site - pacote corrigido seguro
 
-Arquivos principais:
-- index.html
-- styles.css
-- script.js
-- robots.txt
-- assets/images/*
+Este pacote foi feito para substituir o pacote anterior que usava WebP.
+Ele preserva a estrutura original do seu site: index.html, styles.css, script.js e imagens na raiz.
 
-O que foi corrigido:
-- O botão "Assinar PRO" não baixa mais o instalador.
-- O site agora abre um modal pedindo o email da conta LivePlay.
-- O modal chama o mesmo endpoint usado pelo app:
-  POST https://liveplay-backend.onrender.com/payments/create-checkout
-  body: { "email": "email-da-conta@exemplo.com" }
-- O checkout retornado pelo backend é aberto em nova aba.
-- O usuário é orientado a usar o mesmo email no app para sincronizar a licença PRO.
-- Foi adicionada a comparação FREE x PRO com os limites encontrados na tela de Planos do app.
-- O botão placeholder de Discord foi removido da chamada principal.
+O que mudou:
+- O botão Assinar PRO agora vai para um formulário no próprio site.
+- O formulário envia o e-mail para https://liveplay-backend.onrender.com/payments/create-checkout.
+- O checkout retornado pelo backend abre em uma nova aba.
+- As imagens NÃO foram convertidas para WebP.
+- O arquivo tiktok.png foi corrigido para ser PNG de verdade, porque o original tinha bytes WebP com extensão .png.
+- O erro de HTML duplicado no FAQ foi corrigido.
 - Links externos usam rel="noopener noreferrer".
-- Imagens foram convertidas para WebP e movidas para assets/images.
-- Imagens abaixo da primeira dobra usam loading="lazy" e decoding="async".
-- Foram adicionados metadados sociais básicos, robots.txt e Content Security Policy inicial.
 
-Configurações:
-No script.js, confira:
-- LIVEPLAY_CONFIG.DOWNLOAD_URL
-- LIVEPLAY_CONFIG.API_BASE
+Como publicar:
+1. Faça backup dos arquivos atuais do site.
+2. Entre na pasta pública da hospedagem, normalmente public_html, www ou htdocs.
+3. Envie os arquivos deste pacote para essa pasta.
+4. Substitua index.html, styles.css, script.js e imagens.
+5. Não envie a pasta inteira para dentro de public_html se isso criar public_html/liveplay-site-corrigido-seguro/.
+   O index.html deste pacote precisa ficar diretamente na raiz do site.
 
-Atenção sobre CORS:
-Para o checkout funcionar no navegador, o backend precisa permitir CORS para o domínio onde o site será hospedado.
-Se o CORS não estiver liberado, o endpoint pode funcionar no app Electron, mas falhar no site.
+Teste depois de publicar:
+- https://site.liveplayoverlay.com/
+- Botão Baixar grátis
+- Botão Assinar PRO
+- Campo de e-mail do PRO
+- Abertura do checkout
 
-Como testar:
-1. Hospede a pasta em um servidor local ou no domínio real.
-2. Abra o site no navegador.
-3. Clique em "Assinar PRO".
-4. Informe o email da conta LivePlay.
-5. Confirme se o checkout abre.
-6. Depois do pagamento aprovado, abra o app com o mesmo email e sincronize a licença na tela de Planos.
+Se o checkout der erro no site, mas funcionar no app, a causa provável é CORS no backend.
+Nesse caso, libere o domínio https://site.liveplayoverlay.com no endpoint /payments/create-checkout.
+
+
+Atualização desta versão:
+- Texto da seção de demo visual ajustado para não parecer instrução interna.
+- Placeholder do vídeo trocado por uma mensagem pública/profissional.
