@@ -1,143 +1,48 @@
-const LIVEPLAY_CONFIG = {
-  DOWNLOAD_URL: "https://github.com/Diogocas/liveplay-frontend/releases/latest/download/LivePlay-Setup.exe",
-  API_BASE: "https://liveplay-backend.onrender.com"
-};
+LivePlay Site Oficial — versão ajustada
 
-const $ = (selector) => document.querySelector(selector);
-const $$ = (selector) => Array.from(document.querySelectorAll(selector));
+Arquivos principais:
+- index.html
+- styles.css
+- script.js
+- robots.txt
+- assets/images/*
 
-const downloadButton = $("#downloadButton");
-const proModal = $("#proModal");
-const checkoutForm = $("#proCheckoutForm");
-const checkoutEmail = $("#checkoutEmail");
-const checkoutSubmit = $("#checkoutSubmit");
-const checkoutMessage = $("#checkoutMessage");
-const checkoutFallbackLink = $("#checkoutFallbackLink");
-let lastFocusedElement = null;
+O que foi corrigido:
+- O botão "Assinar PRO" não baixa mais o instalador.
+- O site agora abre um modal pedindo o email da conta LivePlay.
+- O modal chama o mesmo endpoint usado pelo app:
+  POST https://liveplay-backend.onrender.com/payments/create-checkout
+  body: { "email": "email-da-conta@exemplo.com" }
+- O checkout retornado pelo backend é aberto em nova aba.
+- O usuário é orientado a usar o mesmo email no app para sincronizar a licença PRO.
+- Foi adicionada a comparação FREE x PRO com os limites encontrados na tela de Planos do app.
+- O botão placeholder de Discord foi removido da chamada principal.
+- Links externos usam rel="noopener noreferrer".
+- Imagens foram convertidas para WebP e movidas para assets/images.
+- Imagens abaixo da primeira dobra usam loading="lazy" e decoding="async".
+- Foram adicionados metadados sociais básicos, robots.txt e Content Security Policy inicial.
 
-function setMessage(text, type = "") {
-  if (!checkoutMessage) return;
-  checkoutMessage.textContent = text || "";
-  checkoutMessage.classList.remove("success", "error");
-  if (type) checkoutMessage.classList.add(type);
-}
+Configurações:
+No script.js, confira:
+- LIVEPLAY_CONFIG.DOWNLOAD_URL
+- LIVEPLAY_CONFIG.API_BASE
 
-function resetFallbackLink() {
-  if (!checkoutFallbackLink) return;
-  checkoutFallbackLink.hidden = true;
-  checkoutFallbackLink.href = "#";
-}
+Atenção sobre CORS:
+Para o checkout funcionar no navegador, o backend precisa permitir CORS para o domínio onde o site será hospedado.
+Se o CORS não estiver liberado, o endpoint pode funcionar no app Electron, mas falhar no site.
 
-function openProModal() {
-  if (!proModal) return;
-  lastFocusedElement = document.activeElement;
-  proModal.hidden = false;
-  proModal.setAttribute("aria-hidden", "false");
-  document.body.style.overflow = "hidden";
-  resetFallbackLink();
-  setMessage("", "");
-  window.setTimeout(() => checkoutEmail?.focus(), 40);
-}
+Como testar:
+1. Hospede a pasta em um servidor local ou no domínio real.
+2. Abra o site no navegador.
+3. Clique em "Assinar PRO".
+4. Informe o email da conta LivePlay.
+5. Confirme se o checkout abre.
+6. Depois do pagamento aprovado, abra o app com o mesmo email e sincronize a licença na tela de Planos.
 
-function closeProModal() {
-  if (!proModal) return;
-  proModal.hidden = true;
-  proModal.setAttribute("aria-hidden", "true");
-  document.body.style.overflow = "";
-  if (lastFocusedElement && typeof lastFocusedElement.focus === "function") {
-    lastFocusedElement.focus();
-  }
-}
 
-async function createCheckout(email) {
-  const response = await fetch(`${LIVEPLAY_CONFIG.API_BASE}/payments/create-checkout`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ email })
-  });
-
-  const data = await response.json().catch(() => null);
-  const checkoutUrl = data?.checkoutUrl || data?.sandboxCheckoutUrl;
-  if (!response.ok || !data?.ok || !checkoutUrl) {
-    throw new Error(data?.error || "Não foi possível gerar o checkout agora.");
-  }
-  return checkoutUrl;
-}
-
-$$("[data-pro-checkout]").forEach((button) => {
-  button.addEventListener("click", (event) => {
-    event.preventDefault();
-    openProModal();
-  });
-});
-
-checkoutForm?.addEventListener("submit", async (event) => {
-  event.preventDefault();
-  resetFallbackLink();
-
-  const email = String(checkoutEmail?.value || "").trim().toLowerCase();
-  if (!email || !email.includes("@")) {
-    setMessage("Informe um email válido para vincular a licença PRO.", "error");
-    checkoutEmail?.focus();
-    return;
-  }
-
-  let checkoutWindow = null;
-  try {
-    checkoutWindow = window.open("about:blank", "_blank");
-    if (checkoutWindow) {
-      checkoutWindow.opener = null;
-      checkoutWindow.document.write("<p style='font-family: system-ui; padding: 24px;'>Gerando checkout seguro do LivePlay...</p>");
-    }
-  } catch {
-    checkoutWindow = null;
-  }
-
-  checkoutSubmit.disabled = true;
-  checkoutSubmit.setAttribute("aria-busy", "true");
-  checkoutSubmit.textContent = "Gerando checkout...";
-  setMessage("Conectando ao checkout seguro do Mercado Pago...", "");
-
-  try {
-    const checkoutUrl = await createCheckout(email);
-    setMessage("Checkout gerado. Depois do pagamento aprovado, abra o app com o mesmo email para sincronizar o PRO.", "success");
-
-    if (checkoutWindow && !checkoutWindow.closed) {
-      checkoutWindow.location.href = checkoutUrl;
-    } else if (checkoutFallbackLink) {
-      checkoutFallbackLink.href = checkoutUrl;
-      checkoutFallbackLink.hidden = false;
-    }
-  } catch (error) {
-    if (checkoutWindow && !checkoutWindow.closed) checkoutWindow.close();
-    const message = error instanceof Error ? error.message : "Falha ao gerar checkout.";
-    setMessage(`${message} Se o erro for de comunicação, confirme se o backend permite CORS para o domínio do site.`, "error");
-  } finally {
-    checkoutSubmit.disabled = false;
-    checkoutSubmit.removeAttribute("aria-busy");
-    checkoutSubmit.textContent = "Gerar checkout Mercado Pago";
-  }
-});
-
-proModal?.addEventListener("click", (event) => {
-  if (event.target === proModal) closeProModal();
-});
-
-$$("[data-close-pro-modal]").forEach((button) => {
-  button.addEventListener("click", closeProModal);
-});
-
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && proModal && !proModal.hidden) {
-    closeProModal();
-  }
-});
-
-downloadButton?.addEventListener("click", (event) => {
-  event.preventDefault();
-  if (!LIVEPLAY_CONFIG.DOWNLOAD_URL || LIVEPLAY_CONFIG.DOWNLOAD_URL === "#") {
-    alert("Configure o link oficial do instalador do LivePlay.");
-    return;
-  }
-  window.open(LIVEPLAY_CONFIG.DOWNLOAD_URL, "_blank", "noopener,noreferrer");
-});
+Atualização Sons Of The Forest:
+- Adicionado card de Sons Of The Forest nos recursos.
+- Adicionado Sons Of The Forest na área "LivePlay em ação".
+- Adicionado Sons Of The Forest na galeria/compatibilidade.
+- Adicionada linha de limite na comparação FREE x PRO: 8 presets FREE / 60 PRO.
+- Adicionada imagem assets/images/sons.webp.
