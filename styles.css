@@ -1315,8 +1315,16 @@ img { max-width: 100%; }
 
 /* Ajuste para artes PNG de personagens/jogos adicionadas ao site */
 .gameplay-item img[src$=".png"],
-.showcase-card img[src$=".png"],
-.feature-game-img[src$=".png"],
 .compat-pill img[src$=".png"] {
   object-fit: contain;
+}
+
+/* Evita corte nas imagens dos cards Sons/Green Hell da seção LivePlay em ação */
+.showcase-card-contain-image > img {
+  object-fit: contain;
+  object-position: center bottom;
+  padding: 18px 18px 0;
+  background:
+    radial-gradient(circle at 50% 70%, rgba(107,111,255,0.16), transparent 55%),
+    rgba(7, 11, 24, 0.35);
 }
