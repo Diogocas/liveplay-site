@@ -1328,3 +1328,14 @@ img { max-width: 100%; }
     radial-gradient(circle at 50% 70%, rgba(107,111,255,0.16), transparent 55%),
     rgba(7, 11, 24, 0.35);
 }
+
+/* Mantém as artes convertidas para WebP sem corte na galeria/cards */
+.gameplay-item img[src*="sons-demon-boss"],
+.gameplay-item img[src*="sons-virginia"],
+.gameplay-item img[src*="sons-bone-club-cannibal"],
+.gameplay-item img[src*="green-hell-jaguar"],
+.gameplay-item img[src*="green-hell-puma"],
+.feature-game-img[src*="green-hell"],
+.compat-pill img[src*="green-hell"] {
+  object-fit: contain;
+}
