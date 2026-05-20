@@ -1335,7 +1335,6 @@ img { max-width: 100%; }
 .gameplay-item img[src*="sons-bone-club-cannibal"],
 .gameplay-item img[src*="green-hell-jaguar"],
 .gameplay-item img[src*="green-hell-puma"],
-.feature-game-img[src*="green-hell"],
 .compat-pill img[src*="green-hell"] {
   object-fit: contain;
 }
