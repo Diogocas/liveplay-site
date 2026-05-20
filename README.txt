@@ -46,3 +46,11 @@ Atualização Sons Of The Forest:
 - Adicionado Sons Of The Forest na galeria/compatibilidade.
 - Adicionada linha de limite na comparação FREE x PRO: 8 presets FREE / 60 PRO.
 - Adicionada imagem assets/images/sons.webp.
+
+
+Atualização aplicada:
+- GTA V foi renomeado visualmente para Grand Theft Auto V Legacy.
+- Green Hell foi adicionado nas seções principais do site.
+- A comparação FREE x PRO recebeu a linha de Green Hell.
+- As imagens inferiores de Sons Of The Forest foram trocadas por imagens de personagens/mutantes.
+- Foram adicionadas imagens de Jaguar/Puma e logo Green Hell.

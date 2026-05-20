@@ -1311,3 +1311,12 @@ img { max-width: 100%; }
     max-width: none;
   }
 }
+
+
+/* Ajuste para artes PNG de personagens/jogos adicionadas ao site */
+.gameplay-item img[src$=".png"],
+.showcase-card img[src$=".png"],
+.feature-game-img[src$=".png"],
+.compat-pill img[src$=".png"] {
+  object-fit: contain;
+}
