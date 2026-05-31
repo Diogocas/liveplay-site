@@ -1,5 +1,5 @@
 const LIVEPLAY_CONFIG = {
-  DOWNLOAD_URL: "https://github.com/Diogocas/liveplay-frontend/releases/latest/download/LivePlay-Setup.exe",
+  DOWNLOAD_URL: "#",
   API_BASE: "https://liveplay-backend.onrender.com"
 };
 
@@ -67,7 +67,15 @@ async function createCheckout(email) {
 $$("[data-pro-checkout]").forEach((button) => {
   button.addEventListener("click", (event) => {
     event.preventDefault();
-    openProModal();
+    alert("Assinatura PRO em breve. O LivePlay ainda está em fase de testes privados.");
+  });
+});
+
+$$("[data-coming-soon]").forEach((button) => {
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    const type = button.getAttribute("data-coming-soon");
+    alert(type === "pro" ? "Assinatura PRO em breve." : "Download em breve. O LivePlay ainda está em fase de testes privados.");
   });
 });
 
@@ -135,9 +143,5 @@ document.addEventListener("keydown", (event) => {
 
 downloadButton?.addEventListener("click", (event) => {
   event.preventDefault();
-  if (!LIVEPLAY_CONFIG.DOWNLOAD_URL || LIVEPLAY_CONFIG.DOWNLOAD_URL === "#") {
-    alert("Configure o link oficial do instalador do LivePlay.");
-    return;
-  }
-  window.open(LIVEPLAY_CONFIG.DOWNLOAD_URL, "_blank", "noopener,noreferrer");
+  alert("Download em breve. O LivePlay ainda está em fase de testes privados.");
 });
