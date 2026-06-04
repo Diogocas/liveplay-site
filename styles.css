@@ -1628,3 +1628,121 @@ img { max-width: 100%; }
     flex-wrap: wrap;
   }
 }
+
+
+/* Complete Minecraft command documentation */
+.command-plugin-detail .plugin-body {
+  padding-bottom: 24px;
+}
+.plugin-usage-box,
+.plugin-mini-info {
+  margin: 16px 0;
+  border: 1px solid rgba(57,230,182,.16);
+  border-radius: 18px;
+  background: rgba(57,230,182,.055);
+  padding: 14px 16px;
+}
+.plugin-usage-box strong,
+.plugin-mini-info strong {
+  display: block;
+  color: #dbeafe;
+  margin-bottom: 8px;
+}
+.plugin-usage-box code {
+  display: inline-flex;
+  max-width: 100%;
+  padding: 9px 10px;
+  border-radius: 12px;
+  color: #c7fff0;
+  background: rgba(2,6,23,.55);
+  border: 1px solid rgba(255,255,255,.08);
+  white-space: normal;
+  word-break: break-word;
+}
+.plugin-mini-info ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+.command-groups {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+.command-group {
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 18px;
+  background: rgba(255,255,255,.035);
+  overflow: hidden;
+}
+.command-group summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  padding: 14px 16px;
+  cursor: pointer;
+  color: #e5e7eb;
+  font-weight: 950;
+  list-style: none;
+}
+.command-group summary::-webkit-details-marker {
+  display: none;
+}
+.command-group summary span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+.command-group-note {
+  margin: 0;
+  padding: 0 16px 12px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+.command-table-wrap {
+  overflow-x: auto;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+.command-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+.command-table td {
+  padding: 12px 14px;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(255,255,255,.07);
+  color: var(--muted);
+  line-height: 1.55;
+}
+.command-table tr:last-child td {
+  border-bottom: 0;
+}
+.command-table td:first-child {
+  width: 315px;
+}
+.command-table code {
+  display: inline-flex;
+  max-width: 100%;
+  padding: 7px 9px;
+  border-radius: 10px;
+  color: #c7fff0;
+  background: rgba(2,6,23,.58);
+  border: 1px solid rgba(255,255,255,.08);
+  white-space: normal;
+  word-break: break-word;
+}
+.minecraft-note code {
+  color: #c7fff0;
+}
+@media (max-width: 760px) {
+  .command-table {
+    min-width: 560px;
+  }
+  .command-table td:first-child {
+    width: 250px;
+  }
+}

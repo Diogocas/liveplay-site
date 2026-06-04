@@ -150,7 +150,7 @@
 <div class="section-head minecraft-section-head">
 <div class="eyebrow">Minecraft no LivePlay</div>
 <h2>Plugins, templates e modos oficiais do Minecraft</h2>
-<p>Clique no card do Minecraft e veja em um só lugar quais plugins existem, quais são FREE ou PRO e o que cada modo faz dentro da live.</p>
+<p>Clique no card do Minecraft e veja todos os plugins oficiais, planos, versões e a lista completa de comandos explicada para configurar seus modelos no LivePlay.</p>
 </div>
 <div class="minecraft-hero-card">
 <div class="minecraft-hero-copy">
@@ -197,165 +197,457 @@
 </article>
 </div>
 <div class="minecraft-plugin-list">
-<details open class="minecraft-plugin-detail">
+<details open class="minecraft-plugin-detail command-plugin-detail">
 <summary>
 <span>
 <strong>LivePlay Survival</strong>
-<small>Survival interativo com mobs, bosses, kits e caos</small>
+<small>Survival interativo com mobs, bosses, kits, TNT, efeitos, baús e armadilhas</small>
 </span>
 <span class="plugin-meta"><b class="plan-pill pro-pill">PRO</b><em>1.21 e 1.20.1</em></span>
 </summary>
 <div class="plugin-body">
-<p>Plugin principal de survival interativo. Ele adiciona comandos para mobs, bosses, armadilhas, TNT, efeitos, baús, kits, comida, armaduras, ferramentas e eventos que podem ser ativados por presentes, likes, follows, shares ou testes manuais no app.</p>
-<div class="plugin-columns">
-<div>
-<h4>Ideal para</h4>
-<ul>
-<li>Lives de survival caótico</li>
-<li>Presentes que ajudam ou atrapalham o jogador</li>
-<li>Eventos com bosses, mobs e armadilhas fortes</li>
-<li>Templates com comandos de baixo, médio e alto impacto</li>
-</ul>
+<p>Plugin principal de survival interativo. Ele transforma eventos da live em ajuda ou caos dentro do Minecraft: mobs, bosses, armadilhas, TNT, efeitos, baús, kits, comida, armaduras, ferramentas e metas.</p>
+<div class="plugin-usage-box">
+<strong>Comando base</strong>
+<code>/survival &lt;ação&gt;</code>
 </div>
-<div>
-<h4>Exemplos de comandos</h4>
-<code>/survival creeper {nickname}</code>
-<code>/survival random_food {nickname}</code>
-<code>/survival tnt 3 2 6 {nickname}</code>
-<code>/survival random_boss {nickname}</code>
-</div>
-</div>
-</div>
+
+<div class="command-groups">
+<details class="command-group" open>
+<summary>Itens, kits e ajuda <span>13 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/survival apple_enchanted &lt;name&gt;</code></td><td>Dá ao jogador uma maçã dourada encantada.</td></tr>
+<tr><td><code>/survival bow &lt;name&gt;</code></td><td>Entrega um arco com encantamento Infinidade.</td></tr>
+<tr><td><code>/survival random_sword &lt;name&gt;</code></td><td>Entrega uma espada aleatória com Afiação III.</td></tr>
+<tr><td><code>/survival totem &lt;name&gt;</code></td><td>Dá um Totem da Imortalidade ao jogador.</td></tr>
+<tr><td><code>/survival random_armor &lt;name&gt;</code></td><td>Entrega uma armadura aleatória com Proteção III.</td></tr>
+<tr><td><code>/survival tools &lt;name&gt;</code></td><td>Entrega ferramentas de netherita.</td></tr>
+<tr><td><code>/survival random_food &lt;name&gt;</code></td><td>Dá 10 carnes cozidas aleatórias.</td></tr>
+<tr><td><code>/survival enderpearls &lt;name&gt;</code></td><td>Dá 16 pérolas do End.</td></tr>
+<tr><td><code>/survival top</code></td><td>Entrega o kit TOP personalizado, com itens muito fortes.</td></tr>
+<tr><td><code>/survival set</code></td><td>Define armadura e espada padrão para o jogador.</td></tr>
+<tr><td><code>/survival chest</code></td><td>Invoca um baú com itens padrão.</td></tr>
+<tr><td><code>/survival chest_super</code></td><td>Invoca um baú com itens raros e mais poderosos.</td></tr>
+<tr><td><code>/survival chest-effect</code></td><td>Ativa ou desativa efeitos visuais no surgimento do baú.</td></tr>
+</tbody></table></div>
 </details>
-<details class="minecraft-plugin-detail">
+<details class="command-group">
+<summary>Mobs e bosses <span>23 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/survival creeper &lt;name&gt;</code></td><td>Invoca um creeper perseguindo o jogador.</td></tr>
+<tr><td><code>/survival creeper_charged &lt;name&gt;</code></td><td>Invoca um creeper eletrificado perseguindo o jogador.</td></tr>
+<tr><td><code>/survival skeleton &lt;name&gt;</code></td><td>Invoca um esqueleto perseguindo o jogador.</td></tr>
+<tr><td><code>/survival witch &lt;name&gt;</code></td><td>Invoca uma bruxa perseguindo o jogador.</td></tr>
+<tr><td><code>/survival spider &lt;name&gt;</code></td><td>Invoca uma aranha.</td></tr>
+<tr><td><code>/survival zombie &lt;armor&gt; &lt;name&gt;</code></td><td>Invoca um zumbi com a armadura escolhida perseguindo o jogador.</td></tr>
+<tr><td><code>/survival bee &lt;name&gt;</code></td><td>Invoca uma abelha perseguindo o jogador.</td></tr>
+<tr><td><code>/survival blaze &lt;name&gt;</code></td><td>Invoca um blaze perseguindo o jogador.</td></tr>
+<tr><td><code>/survival ravager &lt;name&gt;</code></td><td>Invoca um ravager/devastador perseguindo o jogador.</td></tr>
+<tr><td><code>/survival piglin &lt;name&gt;</code></td><td>Invoca um piglin perseguindo o jogador.</td></tr>
+<tr><td><code>/survival evoker &lt;name&gt;</code></td><td>Invoca um evocador perseguindo o jogador.</td></tr>
+<tr><td><code>/survival ghast &lt;name&gt;</code></td><td>Invoca um ghast perseguindo o jogador.</td></tr>
+<tr><td><code>/survival zombiegiant &lt;name&gt;</code></td><td>Invoca um zumbi gigante.</td></tr>
+<tr><td><code>/survival random_boss &lt;name&gt;</code></td><td>Invoca um chefe aleatório perseguindo o jogador.</td></tr>
+<tr><td><code>/survival wither</code></td><td>Invoca um Wither.</td></tr>
+<tr><td><code>/survival warden</code></td><td>Invoca um Warden.</td></tr>
+<tr><td><code>/survival dog</code></td><td>Invoca um cachorro amigável.</td></tr>
+<tr><td><code>/survival skeleton_trap</code></td><td>Invoca cavaleiros esqueletos.</td></tr>
+<tr><td><code>/survival mobs &lt;name&gt;</code></td><td>Invoca uma invasão com vários mobs aleatórios e bosses.</td></tr>
+<tr><td><code>/survival baby_mobs &lt;name&gt;</code></td><td>Invoca mobs bebês rápidos perto do jogador.</td></tr>
+<tr><td><code>/survival jockey &lt;name&gt;</code></td><td>Invoca baby zombie com espada de diamante montado em uma galinha.</td></tr>
+<tr><td><code>/survival armob &lt;radius&gt; &lt;name&gt;</code></td><td>Invoca um mob aleatório, incluindo chefes, dentro do raio informado.</td></tr>
+<tr><td><code>/survival rmob &lt;radius&gt; &lt;name&gt;</code></td><td>Invoca um mob aleatório sem chefes dentro do raio informado.</td></tr>
+</tbody></table></div>
+</details>
+<details class="command-group">
+<summary>Armadilhas e caos <span>13 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/survival pit &lt;width&gt; &lt;height&gt; &lt;name&gt;</code></td><td>Cria um buraco embaixo do jogador.</td></tr>
+<tr><td><code>/survival trap &lt;name&gt;</code></td><td>Prende o jogador em uma estrutura 4x4 de teias.</td></tr>
+<tr><td><code>/survival kill &lt;name&gt;</code></td><td>Mata todos os jogadores do servidor.</td></tr>
+<tr><td><code>/survival lightning &lt;name&gt;</code></td><td>Invoca raios em todos os jogadores do servidor.</td></tr>
+<tr><td><code>/survival raid &lt;name&gt;</code></td><td>Invoca uma invasão completa na localização do jogador.</td></tr>
+<tr><td><code>/survival tntbox &lt;name&gt;</code></td><td>Cria uma caixa de TNT ao redor do jogador com creepers perseguindo.</td></tr>
+<tr><td><code>/survival water_drop &lt;name&gt;</code></td><td>Entrega balde de água e teleporta o jogador 200 blocos para cima.</td></tr>
+<tr><td><code>/survival bee_cage &lt;name&gt;</code></td><td>Cria uma gaiola de mel com abelhas ao redor do jogador.</td></tr>
+<tr><td><code>/survival obsidian_box &lt;name&gt;</code></td><td>Cria uma caixa de obsidiana ao redor do jogador.</td></tr>
+<tr><td><code>/survival stopmove &lt;name&gt;</code></td><td>Congela o movimento do jogador por 10 segundos.</td></tr>
+<tr><td><code>/survival lavapit &lt;name&gt;</code></td><td>Cria um poço de lava abaixo do jogador.</td></tr>
+<tr><td><code>/survival tnt &lt;timer&gt; &lt;force&gt; &lt;radius&gt; &lt;name&gt;</code></td><td>Invoca TNT perto do jogador usando tempo, força e raio.</td></tr>
+<tr><td><code>/survival meteors &lt;count&gt; &lt;name&gt;</code></td><td>Invoca meteoros na área do jogador.</td></tr>
+</tbody></table></div>
+</details>
+<details class="command-group">
+<summary>Efeitos no jogador <span>5 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/survival speed &lt;seconds&gt;</code></td><td>Aumenta a velocidade do jogador pelo tempo informado.</td></tr>
+<tr><td><code>/survival jump_boost &lt;seconds&gt;</code></td><td>Aumenta a altura do salto pelo tempo informado.</td></tr>
+<tr><td><code>/survival strength &lt;seconds&gt;</code></td><td>Aumenta o dano de ataque pelo tempo informado.</td></tr>
+<tr><td><code>/survival regeneration &lt;seconds&gt;</code></td><td>Regenera a vida gradualmente pelo tempo informado.</td></tr>
+<tr><td><code>/survival regeneat</code></td><td>Cancela a perda de fome do jogador.</td></tr>
+</tbody></table></div>
+</details>
+<details class="command-group">
+<summary>Meta, HUD e controle <span>4 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/survival start &lt;timer/zombie/sheep&gt; &lt;minutes/count&gt;</code></td><td>Inicia uma meta do plugin, como timer, zumbis ou ovelhas.</td></tr>
+<tr><td><code>/survival stop</code></td><td>Para as metas ativas.</td></tr>
+<tr><td><code>/survival hidebanner</code></td><td>Oculta o banner que mostra o nome do presente.</td></tr>
+<tr><td><code>/survival clear_inventory &lt;name&gt;</code></td><td>Limpa o inventário de todos os jogadores do servidor.</td></tr>
+</tbody></table></div>
+</details>
+</div>
+</div>
+</details><details class="minecraft-plugin-detail command-plugin-detail">
 <summary>
 <span>
 <strong>LivePlay Treasure Arena</strong>
-<small>Minigame de caça ao tesouro em arena no céu</small>
+<small>Minigame de caça ao tesouro em arena no céu, com 10 fases e boss final</small>
 </span>
 <span class="plugin-meta"><b class="plan-pill pro-pill">PRO</b><em>1.21 e 1.20.1</em></span>
 </summary>
 <div class="plugin-body">
-<p>Minigame completo de caça ao tesouro. O jogador entra em uma arena no céu, procura 3 chaves, abre o baú final, passa de fase, avança até a fase 10, derrota o Warden e volta para a fase 1. A arena muda de tema, os loots melhoram e a dificuldade aumenta com o progresso.</p>
-<div class="plugin-columns">
-<div>
-<h4>O que o plugin cria</h4>
+<p>Minigame completo de caça ao tesouro. O jogador entra em uma arena no céu, encontra 3 chaves, abre o baú final, passa de fase, chega até a fase 10, derrota o Warden e retorna para a fase 1.</p>
+<div class="plugin-usage-box">
+<strong>Comando base</strong>
+<code>/tesouro &lt;ação&gt; ou /treasure &lt;ação&gt;</code>
+</div>
+<div class="plugin-mini-info">
+<strong>Funcionamento do minigame</strong>
 <ul>
-<li>Arena temática com cavernas e baús</li>
-<li>3 chaves por fase e baú final</li>
-<li>Golem e cachorro aliados</li>
-<li>10 fases com guardiões e boss final</li>
-<li>Comandos de mobs, armadilhas, baús, kits e recompensas</li>
+<li>O jogador entra em uma arena no céu, encontra 3 chaves e abre o baú final.</li>
+<li>O minigame tem 10 fases com temas diferentes e dificuldade progressiva.</li>
+<li>Na fase 10, abrir o baú final prepara a luta contra o Warden.</li>
+<li>Depois da vitória, o plugin reseta para a fase 1.</li>
 </ul>
 </div>
-<div>
-<h4>Exemplos de comandos</h4>
-<code>/tesouro create</code>
-<code>/tesouro zombie {nickname}</code>
-<code>/tesouro trap {nickname}</code>
-<code>/tesouro rarechest {nickname}</code>
-<code>/tesouro kitlendario {nickname}</code>
-</div>
-</div>
-</div>
+<div class="command-groups">
+<details class="command-group" open>
+<summary>Comandos principais da arena <span>15 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/tesouro create</code></td><td>Cria a arena do zero e inicia o minigame. Também aceita /tesouro criar.</td></tr>
+<tr><td><code>/tesouro criar</code></td><td>Alias em português para criar a Treasure Arena.</td></tr>
+<tr><td><code>/tesouro start</code></td><td>Volta para a arena sem resetar progresso. Também aceita /tesouro iniciar.</td></tr>
+<tr><td><code>/tesouro iniciar</code></td><td>Alias em português para voltar/iniciar a arena existente.</td></tr>
+<tr><td><code>/tesouro pause</code></td><td>Pausa o minigame e tira o jogador da arena sem apagar progresso.</td></tr>
+<tr><td><code>/tesouro pausar</code></td><td>Alias em português para pausar.</td></tr>
+<tr><td><code>/tesouro stop</code></td><td>Alias para pausar/parar temporariamente.</td></tr>
+<tr><td><code>/tesouro parar</code></td><td>Alias em português para parar temporariamente.</td></tr>
+<tr><td><code>/tesouro delete</code></td><td>Apaga a arena, limpa entidades, reseta progresso e volta ao mundo normal.</td></tr>
+<tr><td><code>/tesouro deletar</code></td><td>Alias em português para deletar.</td></tr>
+<tr><td><code>/tesouro reset</code></td><td>Alias para apagar e resetar a arena.</td></tr>
+<tr><td><code>/tesouro status</code></td><td>Mostra fase atual, tema, chaves, pontuação e estado do minigame.</td></tr>
+<tr><td><code>/tesouro setplayer &lt;player&gt;</code></td><td>Define o jogador principal/alvo dos comandos do app/RCON.</td></tr>
+<tr><td><code>/tesouro reload</code></td><td>Recarrega a configuração do plugin sem reiniciar o servidor.</td></tr>
+<tr><td><code>/treasure &lt;ação&gt;</code></td><td>Alias em inglês para os comandos principais do Tesouro.</td></tr>
+</tbody></table></div>
 </details>
-<details class="minecraft-plugin-detail">
+<details class="command-group">
+<summary>Baús e tesouros <span>8 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/tesouro chest {nickname}</code></td><td>Cria um baú comum com loot aleatório da fase atual.</td></tr>
+<tr><td><code>/tesouro rarechest {nickname}</code></td><td>Cria um baú raro com chance de loot mais forte.</td></tr>
+<tr><td><code>/tesouro raro {nickname}</code></td><td>Alias em português para rarechest.</td></tr>
+<tr><td><code>/tesouro cavechest {nickname}</code></td><td>Cria um baú extra dentro de uma caverna da arena.</td></tr>
+<tr><td><code>/tesouro caverna {nickname}</code></td><td>Alias em português para cavechest.</td></tr>
+<tr><td><code>/tesouro key {nickname}</code></td><td>Adiciona uma chave ao progresso do jogador.</td></tr>
+<tr><td><code>/tesouro chave {nickname}</code></td><td>Alias em português para key.</td></tr>
+<tr><td><code>/tesouro final {nickname}</code></td><td>Força o baú final a aparecer manualmente.</td></tr>
+</tbody></table></div>
+</details>
+<details class="command-group">
+<summary>Eventos e suporte <span>8 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/tesouro trap {nickname}</code></td><td>Ativa uma armadilha na arena.</td></tr>
+<tr><td><code>/tesouro armadilha {nickname}</code></td><td>Alias em português para trap.</td></tr>
+<tr><td><code>/tesouro boss {nickname}</code></td><td>Invoca o boss Warden.</td></tr>
+<tr><td><code>/tesouro chefe {nickname}</code></td><td>Alias em português para boss.</td></tr>
+<tr><td><code>/tesouro hint {nickname}</code></td><td>Dá uma dica de localização para ajudar a encontrar chaves/tesouros.</td></tr>
+<tr><td><code>/tesouro dica {nickname}</code></td><td>Alias em português para hint.</td></tr>
+<tr><td><code>/tesouro food {nickname}</code></td><td>Entrega comida útil ao jogador.</td></tr>
+<tr><td><code>/tesouro comida {nickname}</code></td><td>Alias em português para food.</td></tr>
+</tbody></table></div>
+</details>
+<details class="command-group">
+<summary>Kits e itens <span>10 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/tesouro diamondset {nickname}</code></td><td>Entrega armadura completa de diamante, espada de diamante e 5 maçãs douradas encantadas.</td></tr>
+<tr><td><code>/tesouro setdiamante {nickname}</code></td><td>Alias em português para diamondset.</td></tr>
+<tr><td><code>/tesouro diamanteset {nickname}</code></td><td>Outro alias para diamondset.</td></tr>
+<tr><td><code>/tesouro enchantedapple {nickname}</code></td><td>Dá 1 maçã dourada encantada ao jogador.</td></tr>
+<tr><td><code>/tesouro macaencantada {nickname}</code></td><td>Alias em português para enchantedapple.</td></tr>
+<tr><td><code>/tesouro appleencantada {nickname}</code></td><td>Outro alias para enchantedapple.</td></tr>
+<tr><td><code>/tesouro kitlendario {nickname}</code></td><td>Entrega kit muito forte com netherita encantada, ferramentas, escudo, arco, flechas, comida e 20 maçãs encantadas.</td></tr>
+<tr><td><code>/tesouro lendario {nickname}</code></td><td>Alias em português para kitlendario.</td></tr>
+<tr><td><code>/tesouro tesourotop {nickname}</code></td><td>Alias para kit lendário.</td></tr>
+<tr><td><code>/tesouro toptesouro {nickname}</code></td><td>Outro alias para kit lendário.</td></tr>
+</tbody></table></div>
+</details>
+<details class="command-group">
+<summary>Mobs básicos <span>6 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/tesouro zombie {nickname}</code></td><td>Cria um zumbi na arena com nome opcional da pessoa da live.</td></tr>
+<tr><td><code>/tesouro skeleton {nickname}</code></td><td>Cria um esqueleto na arena.</td></tr>
+<tr><td><code>/tesouro spider {nickname}</code></td><td>Cria uma aranha na arena.</td></tr>
+<tr><td><code>/tesouro creeper {nickname}</code></td><td>Cria um creeper na arena.</td></tr>
+<tr><td><code>/tesouro witch {nickname}</code></td><td>Cria uma bruxa na arena.</td></tr>
+<tr><td><code>/tesouro ravager {nickname}</code></td><td>Cria um ravager na arena.</td></tr>
+</tbody></table></div>
+</details>
+<details class="command-group">
+<summary>Mobs guardiões de fase <span>8 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/tesouro husk {nickname}</code></td><td>Cria um Husk, guardião relacionado à fase de deserto.</td></tr>
+<tr><td><code>/tesouro stray {nickname}</code></td><td>Cria um Stray, guardião relacionado à fase de gelo.</td></tr>
+<tr><td><code>/tesouro piglin {nickname}</code></td><td>Cria um Piglin e tenta impedir que vire Zombified Piglin.</td></tr>
+<tr><td><code>/tesouro enderman {nickname}</code></td><td>Cria um Enderman.</td></tr>
+<tr><td><code>/tesouro vindicator {nickname}</code></td><td>Cria um Vindicator.</td></tr>
+<tr><td><code>/tesouro guardian {nickname}</code></td><td>Cria um Guardian.</td></tr>
+<tr><td><code>/tesouro pillager {nickname}</code></td><td>Cria um Pillager.</td></tr>
+<tr><td><code>/tesouro wither_skeleton {nickname}</code></td><td>Cria um Wither Skeleton.</td></tr>
+</tbody></table></div>
+</details>
+<details class="command-group">
+<summary>Mobs extras <span>4 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/tesouro zombified_piglin {nickname}</code></td><td>Cria um Zombified Piglin.</td></tr>
+<tr><td><code>/tesouro hoglin {nickname}</code></td><td>Cria um Hoglin e tenta impedir que vire Zoglin.</td></tr>
+<tr><td><code>/tesouro shulker {nickname}</code></td><td>Cria um Shulker.</td></tr>
+<tr><td><code>/tesouro silverfish {nickname}</code></td><td>Cria um Silverfish.</td></tr>
+</tbody></table></div>
+</details>
+<details class="command-group">
+<summary>Mobs aliados <span>3 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/tesouro golem {nickname}</code></td><td>Cria um Iron Golem aliado que ajuda o jogador na arena.</td></tr>
+<tr><td><code>/tesouro dog {nickname}</code></td><td>Cria um cachorro domesticado para seguir e ajudar o jogador em combate.</td></tr>
+<tr><td><code>/tesouro villager {nickname}</code></td><td>Cria um Villager amigo, usado como elemento visual/interativo.</td></tr>
+</tbody></table></div>
+</details>
+<details class="command-group">
+<summary>Comandos removidos <span>5 comandos</span></summary>
+<p class="command-group-note">Estes comandos aparecem apenas para evitar confusão: não devem ser usados em modelos novos.</p>
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/tesouro elder_guardian</code></td><td>Removido. Não usar em modelos novos.</td></tr>
+<tr><td><code>/tesouro ghast</code></td><td>Removido. Não usar em modelos novos.</td></tr>
+<tr><td><code>/tesouro magma_cube</code></td><td>Removido. Não usar em modelos novos.</td></tr>
+<tr><td><code>/tesouro mob</code></td><td>Removido. Não usar em modelos novos.</td></tr>
+<tr><td><code>/tesouro warden</code></td><td>Removido. Para invocar o Warden, use /tesouro boss.</td></tr>
+</tbody></table></div>
+</details>
+</div>
+</div>
+</details><details class="minecraft-plugin-detail command-plugin-detail">
 <summary>
 <span>
 <strong>LivePlay Surto Solar</strong>
-<small>Evento survival por ondas com mobs nomeados</small>
+<small>Evento survival por ondas com mobs nomeados pela live</small>
 </span>
 <span class="plugin-meta"><b class="plan-pill free-pill">FREE</b><em>1.21 e 1.20.1</em></span>
 </summary>
 <div class="plugin-body">
-<p>Plugin de evento por ondas. O jogador precisa matar todos os mobs da onda atual para avançar. Os mobs podem receber o nome da pessoa da live usando {nickname} ou {username}, e o plugin protege os mobs do evento para não queimarem no sol.</p>
-<div class="plugin-columns">
-<div>
-<h4>Como funciona</h4>
+<p>Plugin de evento por ondas. O jogador precisa matar todos os mobs da onda atual para avançar. Os mobs podem receber o nome da pessoa da live usando {nickname} ou {username} e são protegidos para não queimar no sol.</p>
+<div class="plugin-usage-box">
+<strong>Comando base</strong>
+<code>/surtosolar ou /solar</code>
+</div>
+<div class="plugin-mini-info">
+<strong>Ondas padrão</strong>
 <ul>
-<li>Inicia o evento e cria a primeira onda</li>
-<li>Conta os mobs restantes automaticamente</li>
-<li>Avança quando todos forem derrotados</li>
-<li>Permite reforços enviados pela live durante a onda</li>
-<li>Possui comandos de status, reload, clear e setplayer</li>
+<li>Onda 1: zumbis, esqueletos e aranhas.</li>
+<li>Onda 2: zumbis, esqueletos, creepers e bruxa.</li>
+<li>Onda 3: zumbis, aranhas, creepers e bruxas.</li>
+<li>Onda 4: zumbis, esqueletos, creepers e bruxas.</li>
+<li>Onda final: zumbis, esqueletos, wither skeletons e ravager.</li>
 </ul>
 </div>
-<div>
-<h4>Exemplos de comandos</h4>
-<code>/surtosolar start {nickname}</code>
-<code>/surtosolar {nickname}</code>
-<code>/surtosolar status</code>
-<code>/surtosolar stop</code>
-</div>
-</div>
-</div>
+<div class="command-groups">
+<details class="command-group" open>
+<summary>Comandos principais <span>7 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/surtosolar start</code></td><td>Inicia o evento Surto Solar com nomes padrão nos mobs.</td></tr>
+<tr><td><code>/surtosolar start &lt;nickname&gt;</code></td><td>Inicia o evento com o nome da pessoa nos mobs; se já estiver ativo, adiciona reforço na onda atual.</td></tr>
+<tr><td><code>/surtosolar stop</code></td><td>Para o evento.</td></tr>
+<tr><td><code>/surtosolar status</code></td><td>Mostra player alvo, onda atual, total de ondas, mobs restantes e tempo.</td></tr>
+<tr><td><code>/surtosolar reload</code></td><td>Recarrega o config.yml.</td></tr>
+<tr><td><code>/surtosolar clear</code></td><td>Remove os mobs do Surto Solar.</td></tr>
+<tr><td><code>/surtosolar setplayer &lt;player&gt;</code></td><td>Define o jogador principal/alvo do evento.</td></tr>
+</tbody></table></div>
 </details>
-<details class="minecraft-plugin-detail">
+<details class="command-group">
+<summary>Mob direto e alias <span>4 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/surtosolar</code></td><td>Cria um mob do Surto Solar sem nome em cima.</td></tr>
+<tr><td><code>/surtosolar &lt;nickname&gt;</code></td><td>Cria um mob com o nome da pessoa em cima da cabeça.</td></tr>
+<tr><td><code>/solar</code></td><td>Alias curto do comando /surtosolar.</td></tr>
+<tr><td><code>/solar &lt;nickname&gt;</code></td><td>Alias curto para criar mob nomeado pelo viewer.</td></tr>
+</tbody></table></div>
+</details>
+</div>
+</div>
+</details><details class="minecraft-plugin-detail command-plugin-detail">
 <summary>
 <span>
 <strong>LivePlay Bedrock Box</strong>
-<small>Caixa de desafios com timer, blocos e TNT</small>
+<small>Caixa de desafios com timer, blocos, TNT, prisão de vidro e proteção</small>
 </span>
 <span class="plugin-meta"><b class="plan-pill free-pill">FREE</b><em>Plugin oficial</em></span>
 </summary>
 <div class="plugin-body">
-<p>Plugin de caixa de desafios para live. Ele cria uma caixa de Bedrock, vidro ou madeira, controla timer de vitória, preenchimento de blocos, limpeza, TNT, Super TNT, prisão de vidro, proteção e eventos de interação com o público.</p>
-<div class="plugin-columns">
-<div>
-<h4>Recursos principais</h4>
-<ul>
-<li>Criar, parar, deletar e teleportar para a caixa</li>
-<li>Preencher blocos por linha ou quantidade</li>
-<li>Trocar material para vidro, madeira ou bedrock</li>
-<li>Invocar TNT, Random TNT e Super TNT</li>
-<li>Configurar altura, raio, timer, proteção e fogos</li>
-</ul>
+<p>Plugin de caixa de desafios para live. Ele cria uma caixa de Bedrock, vidro ou madeira, controla timer, preenchimento de blocos, limpeza, TNT, Super TNT, prisão de vidro, proteção e eventos interativos.</p>
+<div class="plugin-usage-box">
+<strong>Comando base</strong>
+<code>/bedrock &lt;ação&gt;</code>
 </div>
-<div>
-<h4>Exemplos de comandos</h4>
-<code>/bedrock create</code>
-<code>/bedrock fillblock 5</code>
-<code>/bedrock tnt {nickname}</code>
-<code>/bedrock randomtnt</code>
-<code>/bedrock glass_prison 10</code>
-</div>
-</div>
-</div>
+
+<div class="command-groups">
+<details class="command-group" open>
+<summary>Comandos principais <span>6 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/bedrock create</code></td><td>Cria uma caixa de Bedrock e inicia o timer quando ela estiver cheia.</td></tr>
+<tr><td><code>/bedrock create &lt;tamanho&gt; &lt;altura&gt;</code></td><td>Cria uma caixa personalizada. Tamanho mínimo 3 e altura permitida de 9 a 21.</td></tr>
+<tr><td><code>/bedrock stop</code></td><td>Para o timer da caixa.</td></tr>
+<tr><td><code>/bedrock delete</code></td><td>Deleta a caixa e para o timer.</td></tr>
+<tr><td><code>/bedrock tp</code></td><td>Teleporta o jogador para o topo da caixa.</td></tr>
+<tr><td><code>/bedrock timer &lt;número&gt;</code></td><td>Define uma nova duração para o timer de vitória.</td></tr>
+</tbody></table></div>
 </details>
-<details class="minecraft-plugin-detail">
+<details class="command-group">
+<summary>Preenchimento e limpeza <span>5 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/bedrock fill</code></td><td>Preenche a caixa com blocos.</td></tr>
+<tr><td><code>/bedrock fill &lt;linhas&gt;</code></td><td>Preenche a caixa por quantidade de linhas.</td></tr>
+<tr><td><code>/bedrock fillblock &lt;quantidade&gt;</code></td><td>Preenche uma quantidade específica de blocos na caixa.</td></tr>
+<tr><td><code>/bedrock clear</code></td><td>Limpa todos os blocos da caixa.</td></tr>
+<tr><td><code>/bedrock layer &lt;quantidade&gt; &lt;material&gt;</code></td><td>Altera o material das camadas da caixa.</td></tr>
+</tbody></table></div>
+</details>
+<details class="command-group">
+<summary>Material da caixa <span>3 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/bedrock glass</code></td><td>Troca paredes e chão da caixa por vidro.</td></tr>
+<tr><td><code>/bedrock wood</code></td><td>Troca paredes e chão da caixa por madeira.</td></tr>
+<tr><td><code>/bedrock rock</code></td><td>Define paredes e chão como Bedrock.</td></tr>
+</tbody></table></div>
+</details>
+<details class="command-group">
+<summary>TNT e eventos <span>4 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/bedrock tnt [nome]</code></td><td>Invoca TNT acima da caixa com nome opcional.</td></tr>
+<tr><td><code>/bedrock randomtnt</code></td><td>Invoca TNT com força aleatória.</td></tr>
+<tr><td><code>/bedrock supertnt &lt;quantidade&gt; &lt;força&gt;</code></td><td>Invoca Super TNT usando quantidade e força informadas.</td></tr>
+<tr><td><code>/bedrock glass_prison &lt;segundos&gt;</code></td><td>Prende o jogador em uma prisão de vidro pelo tempo definido.</td></tr>
+</tbody></table></div>
+</details>
+<details class="command-group">
+<summary>Configuração e proteção <span>11 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/bedrock edit</code></td><td>Ativa ou desativa a proteção dos blocos da caixa.</td></tr>
+<tr><td><code>/bedrock autoreplace</code></td><td>Ativa ou desativa o preenchimento com qualquer bloco.</td></tr>
+<tr><td><code>/bedrock fireworks</code></td><td>Ativa ou desativa fogos quando a TNT explode.</td></tr>
+<tr><td><code>/bedrock toplock</code></td><td>Bloqueia ou desbloqueia o espaço acima da caixa.</td></tr>
+<tr><td><code>/bedrock color &lt;cancel/win&gt; &lt;cor&gt;</code></td><td>Altera a cor do texto de cancelamento ou vitória.</td></tr>
+<tr><td><code>/bedrock heightup &lt;quantidade&gt;</code></td><td>Aumenta a altura da caixa.</td></tr>
+<tr><td><code>/bedrock heightdown &lt;quantidade&gt;</code></td><td>Diminui a altura da caixa.</td></tr>
+<tr><td><code>/bedrock radiusup &lt;quantidade&gt;</code></td><td>Aumenta o raio da caixa.</td></tr>
+<tr><td><code>/bedrock radiusdown &lt;quantidade&gt;</code></td><td>Diminui o raio da caixa.</td></tr>
+<tr><td><code>/bedrock set_main_user &lt;usuário&gt;</code></td><td>Define o usuário principal da caixa.</td></tr>
+<tr><td><code>/bedrock remove_main_user</code></td><td>Remove o usuário principal.</td></tr>
+</tbody></table></div>
+</details>
+</div>
+</div>
+</details><details class="minecraft-plugin-detail command-plugin-detail">
 <summary>
 <span>
 <strong>LivePlay Border</strong>
-<small>Borda dinâmica com mobs, baús, TNT e eventos</small>
+<small>Borda dinâmica com expansão, redução, mobs, baús, TNT e eventos extras</small>
 </span>
 <span class="plugin-meta"><b class="plan-pill free-pill">FREE</b><em>Plugin oficial</em></span>
 </summary>
 <div class="plugin-body">
-<p>Plugin de borda dinâmica. Ele cria uma borda ao redor do jogador, permite expandir ou reduzir a área, gerar TNT, baús, proteção de spawn e eventos extras controlados por espectadores.</p>
-<div class="plugin-columns">
-<div>
-<h4>Recursos principais</h4>
-<ul>
-<li>Criar, iniciar, pausar, deletar e consultar a borda</li>
-<li>Expandir ou fechar a área do desafio</li>
-<li>Invocar zumbi, esqueleto, rider e PigBoom</li>
-<li>Gerar TNT, queda de TNT, areia e baús</li>
-<li>Entregar kit, ferramentas e maçã encantada</li>
-</ul>
+<p>Plugin de borda dinâmica para live. Ele cria uma borda ao redor do jogador, permite expandir ou reduzir a área, gerar TNT, baús, proteção de spawn e eventos extras controlados pelos espectadores.</p>
+<div class="plugin-usage-box">
+<strong>Comando base</strong>
+<code>/border &lt;ação&gt;</code>
 </div>
-<div>
-<h4>Exemplos de comandos</h4>
-<code>/border zombie {nickname}</code>
-<code>/border skeleton {nickname}</code>
-<code>/border shrink 20</code>
-<code>/border tntfall {nickname}</code>
-<code>/border kit</code>
-</div>
-</div>
-</div>
+
+<div class="command-groups">
+<details class="command-group" open>
+<summary>Comandos principais <span>6 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/border create [tamanho] [meta]</code></td><td>Cria uma borda. Se não informar tamanho/meta, usa o padrão do plugin.</td></tr>
+<tr><td><code>/border start</code></td><td>Retoma ou inicia a borda pausada.</td></tr>
+<tr><td><code>/border stop</code></td><td>Pausa a borda atual.</td></tr>
+<tr><td><code>/border delete</code></td><td>Remove a borda permanentemente.</td></tr>
+<tr><td><code>/border info</code></td><td>Mostra informações da borda atual.</td></tr>
+<tr><td><code>/border help</code></td><td>Mostra a ajuda dos comandos.</td></tr>
+</tbody></table></div>
+</details>
+<details class="command-group">
+<summary>Tamanho da borda <span>2 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/border expand [quantidade]</code></td><td>Expande a borda pela quantidade informada.</td></tr>
+<tr><td><code>/border shrink [quantidade]</code></td><td>Reduz a borda pela quantidade informada.</td></tr>
+</tbody></table></div>
+</details>
+<details class="command-group">
+<summary>TNT e baú <span>2 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/border tnt [nick] [quantidade] [segundos] [força]</code></td><td>Gera TNT na borda/evento da borda, podendo usar nick da live.</td></tr>
+<tr><td><code>/border chest</code></td><td>Gera um baú de recompensa.</td></tr>
+</tbody></table></div>
+</details>
+<details class="command-group">
+<summary>Proteção <span>2 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/border addspawnprotection &lt;raio&gt;</code></td><td>Define o raio de proteção do spawn.</td></tr>
+<tr><td><code>/border removespawnprotection</code></td><td>Remove ou desativa a proteção do spawn.</td></tr>
+</tbody></table></div>
+</details>
+<details class="command-group">
+<summary>Extras interativos <span>9 comandos</span></summary>
+
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/border zombie &lt;nickname&gt;</code></td><td>Invoca zumbi com nome opcional.</td></tr>
+<tr><td><code>/border skeleton &lt;nickname&gt;</code></td><td>Invoca esqueleto com nome opcional.</td></tr>
+<tr><td><code>/border rider &lt;nickname&gt;</code></td><td>Invoca mob montado, estilo rider.</td></tr>
+<tr><td><code>/border pigboom &lt;nickname&gt;</code></td><td>Invoca evento explosivo com porco/TNT.</td></tr>
+<tr><td><code>/border tntfall &lt;nickname&gt;</code></td><td>Gera queda de TNT.</td></tr>
+<tr><td><code>/border sand</code></td><td>Gera areia caindo.</td></tr>
+<tr><td><code>/border kit</code></td><td>Entrega kit de diamante.</td></tr>
+<tr><td><code>/border tools</code></td><td>Entrega ferramentas de diamante.</td></tr>
+<tr><td><code>/border gapple</code></td><td>Entrega maçã dourada encantada.</td></tr>
+</tbody></table></div>
 </details>
 </div>
-<p class="minecraft-note">Quando um plugin possui versão 1.21 e 1.20.1, a descrição aparece uma vez só, porque as duas versões fazem a mesma função dentro do LivePlay.</p>
+</div>
+</details></div>
+<p class="minecraft-note">Quando um plugin possui versão 1.21 e 1.20.1, a descrição aparece uma vez só, porque as duas versões fazem a mesma função dentro do LivePlay. Os comandos com <code>{nickname}</code> ou <code>{username}</code> são ideais para eventos da TikTok Live, porque colocam o nome da pessoa no mob, mensagem ou ação.</p>
 </section>
 <section class="section split" id="demo">
 <div>
