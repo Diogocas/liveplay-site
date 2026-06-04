@@ -98,27 +98,31 @@
 <p>Comandos, mobs, servidores, plugins e automações para transformar a live em gameplay interativo.</p>
 <span class="minecraft-card-cta">Ver plugins e templates →</span>
 </a>
-<article class="feature-card game-feature">
+<a aria-label="Ver comandos e template do Grand Theft Auto V Legacy no LivePlay" class="feature-card game-feature game-click-card" href="#gta5-details">
 <img alt="Grand Theft Auto V" class="feature-game-img" decoding="async" height="720" loading="lazy" src="./assets/images/gta.webp" width="720"/>
 <h3>Grand Theft Auto V Legacy</h3>
 <p>Eventos da live podem causar caos no jogo com bridge própria, efeitos e comandos em tempo real.</p>
-</article>
-<article class="feature-card game-feature">
+<span class="minecraft-card-cta">Ver comandos completos →</span>
+</a>
+<a aria-label="Ver comandos e template do Sons Of The Forest no LivePlay" class="feature-card game-feature game-click-card" href="#sons-forest-details">
 <img alt="Sons Of The Forest" class="feature-game-img" decoding="async" height="512" loading="lazy" src="./assets/images/sons.webp" width="512"/>
 <h3>Sons Of The Forest</h3>
 <p>Integração via BepInEx para acionar canibais, mutantes, horário do jogo, cura e presets de sobrevivência.</p>
-</article>
-<article class="feature-card game-feature">
+<span class="minecraft-card-cta">Ver comandos completos →</span>
+</a>
+<a aria-label="Ver comandos e template do Green Hell no LivePlay" class="feature-card game-feature game-click-card" href="#green-hell-details">
 <img alt="Green Hell" class="feature-game-img" decoding="async" height="1024" loading="lazy" src="./assets/images/green-hell.webp" width="1024"/>
 <h3>Green Hell</h3>
 <p>Integração via BepInEx para acionar animais, comandos de sobrevivência e eventos na selva durante a live.</p>
-</article>
+<span class="minecraft-card-cta">Ver comandos completos →</span>
+</a>
 
-<article class="feature-card game-feature">
+<a aria-label="Ver comandos e template do Valheim no LivePlay" class="feature-card game-feature game-click-card" href="#valheim-details">
 <img alt="Valheim" class="feature-game-img" decoding="async" height="1024" loading="lazy" src="./assets/images/valheim-logo.webp" width="1024"/>
 <h3>Valheim</h3>
 <p>Bosses, criaturas, raids e sobrevivência em tempo real durante a live.</p>
-</article>
+<span class="minecraft-card-cta">Ver comandos completos →</span>
+</a>
 
 <article class="feature-card game-feature">
 <img alt="Only Climb Better Together" class="feature-game-img" decoding="async" height="1254" loading="lazy" src="./assets/images/only-climb.webp" width="1254"/>
@@ -648,6 +652,1656 @@
 </div>
 </details></div>
 <p class="minecraft-note">Quando um plugin possui versão 1.21 e 1.20.1, a descrição aparece uma vez só, porque as duas versões fazem a mesma função dentro do LivePlay. Os comandos com <code>{nickname}</code> ou <code>{username}</code> são ideais para eventos da TikTok Live, porque colocam o nome da pessoa no mob, mensagem ou ação.</p>
+</section>
+<section class="section game-docs-section" id="game-templates">
+<div class="section-head game-docs-head">
+<div class="eyebrow">Templates dos outros jogos</div>
+<h2>Comandos completos dos jogos integrados</h2>
+<p>Clique no jogo e veja o template oficial, como ele se conecta ao LivePlay e todos os comandos disponíveis separados por categoria.</p>
+</div>
+<div class="game-doc-nav" aria-label="Atalhos dos jogos com documentação completa">
+<a href="#gta5-details">Grand Theft Auto V Legacy</a><a href="#sons-forest-details">Sons Of The Forest</a><a href="#green-hell-details">Green Hell</a><a href="#valheim-details">Valheim</a>
+</div>
+<div class="minecraft-plugin-list game-doc-list">
+<details class="minecraft-plugin-detail command-plugin-detail game-command-detail" id="gta5-details" open>
+<summary>
+<span>
+<strong>Grand Theft Auto V Legacy</strong>
+<small>Bridge próprio para transformar eventos da live em caos, veículos, polícia, NPCs, armas, clima, teleporte e efeitos visuais em tempo real.</small>
+</span>
+<span class="plugin-meta"><b class="plan-pill free-pill">FREE</b><em>96 comandos</em></span>
+</summary>
+<div class="plugin-body">
+<div class="game-doc-hero">
+<div>
+<span class="minecraft-kicker">Template oficial</span>
+<h3>Grand Theft Auto V Legacy Oficial</h3>
+<p>Bridge próprio para transformar eventos da live em caos, veículos, polícia, NPCs, armas, clima, teleporte e efeitos visuais em tempo real.</p>
+<div class="minecraft-flow"><span>TikTok Live</span><strong>→</strong><span>Modelo GTA</span><strong>→</strong><span>Bridge local</span><strong>→</strong><span>Ação no GTA V</span></div>
+</div>
+<img alt="Grand Theft Auto V Legacy no LivePlay" decoding="async" loading="lazy" src="./assets/images/gta.webp"/>
+</div>
+<div class="game-doc-info-grid">
+<article>
+<strong>Plano</strong>
+<p>Template oficial <b>FREE</b> para criar modelos prontos no LivePlay.</p>
+</article>
+<article>
+<strong>Bridge</strong>
+<p>ScriptHookVDotNet / bridge local LivePlay</p>
+</article>
+<article>
+<strong>Porta local</strong>
+<p><code>35951</code></p>
+</article>
+<article>
+<strong>Comandos</strong>
+<p>96 comandos organizados em 9 categorias.</p>
+</article>
+</div>
+<div class="plugin-usage-box">
+<strong>Como usar nos modelos</strong>
+<code>lp earthquake</code>
+<p>Escolha o comando, vincule a um gift, like, follow, share ou chat, e o LivePlay envia a ação para o bridge do jogo.</p>
+</div>
+<div class="command-groups">
+<details class="command-group">
+<summary>Caos/Física <span>6 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Earthquake</strong><code>lp earthquake</code></td>
+<td>Terremoto com tremor de câmera, explosão fraca no chão e impulso no player.</td>
+</tr><tr>
+<td><strong>Meteor Shower</strong><code>lp meteor_shower</code></td>
+<td>Cria várias explosões próximas simulando meteoros.</td>
+</tr><tr>
+<td><strong>Explosion Ring</strong><code>lp explosion_ring</code></td>
+<td>Cria anel de explosões ao redor do player.</td>
+</tr><tr>
+<td><strong>Fire Chaos</strong><code>lp fire_chaos</code></td>
+<td>Cria fogo/explosão de molotov perto do player.</td>
+</tr><tr>
+<td><strong>Low Gravity Push</strong><code>lp low_gravity</code></td>
+<td>Aplica impulso de gravidade baixa em player/veículos.</td>
+</tr><tr>
+<td><strong>Black Hole</strong><code>lp black_hole</code></td>
+<td>Cria um efeito de buraco negro/gravidade puxando veículos e entidades próximas.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Player <span>10 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Drunk</strong><code>lp drunk</code></td>
+<td>Deixa o player bêbado/ragdoll por alguns segundos.</td>
+</tr><tr>
+<td><strong>Ragdoll</strong><code>lp ragdoll</code></td>
+<td>Derruba o player no ragdoll.</td>
+</tr><tr>
+<td><strong>Launch Player Up</strong><code>lp launch_player</code></td>
+<td>Joga o player para cima.</td>
+</tr><tr>
+<td><strong>Skydive</strong><code>lp skydive</code></td>
+<td>Joga o player bem alto para cair de paraquedas/manual.</td>
+</tr><tr>
+<td><strong>Heal Player</strong><code>lp heal</code></td>
+<td>Cura o player e adiciona armadura.</td>
+</tr><tr>
+<td><strong>Add Armor</strong><code>lp armor</code></td>
+<td>Coloca armadura no player.</td>
+</tr><tr>
+<td><strong>Kill Player</strong><code>lp kill_player</code></td>
+<td>Mata o player.</td>
+</tr><tr>
+<td><strong>Subtract Health</strong><code>lp subtract_health</code></td>
+<td>Remove parte da vida do player.</td>
+</tr><tr>
+<td><strong>Invincible</strong><code>lp invincible</code></td>
+<td>Ativa invencibilidade temporária no player.</td>
+</tr><tr>
+<td><strong>Super Jump</strong><code>lp super_jump</code></td>
+<td>Joga o player para cima como super jump.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Polícia <span>7 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>1 Wanted Star</strong><code>lp wanted_1</code></td>
+<td>Define 1 estrela de procurado.</td>
+</tr><tr>
+<td><strong>+2 Wanted Stars</strong><code>lp wanted_2</code></td>
+<td>Adiciona/define perseguição forte com 2 estrelas.</td>
+</tr><tr>
+<td><strong>3 Wanted Stars</strong><code>lp wanted_3</code></td>
+<td>Define 3 estrelas de procurado.</td>
+</tr><tr>
+<td><strong>5 Wanted Stars</strong><code>lp wanted_5</code></td>
+<td>Define 5 estrelas de procurado.</td>
+</tr><tr>
+<td><strong>Max Wanted</strong><code>lp max_wanted</code></td>
+<td>Define nível máximo de procurado.</td>
+</tr><tr>
+<td><strong>Clear Wanted</strong><code>lp clear_wanted</code></td>
+<td>Remove o nível de procurado.</td>
+</tr><tr>
+<td><strong>Never Wanted</strong><code>lp never_wanted</code></td>
+<td>Remove o nível de procurado.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Veículos <span>26 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Spawn Random Vehicle</strong><code>lp spawn_random_vehicle</code></td>
+<td>Spawna um veículo padrão/aleatório controlado pelo bridge.</td>
+</tr><tr>
+<td><strong>Spawn Adder</strong><code>lp spawn_adder</code></td>
+<td>Spawna um Adder.</td>
+</tr><tr>
+<td><strong>Spawn Sultan</strong><code>lp spawn_sultan</code></td>
+<td>Spawna um Sultan.</td>
+</tr><tr>
+<td><strong>Spawn Rhino</strong><code>lp spawn_rhino</code></td>
+<td>Spawna um tanque Rhino.</td>
+</tr><tr>
+<td><strong>Spawn BMX</strong><code>lp spawn_bmx</code></td>
+<td>Spawna uma BMX.</td>
+</tr><tr>
+<td><strong>Spawn Faggio</strong><code>lp spawn_faggio</code></td>
+<td>Spawna uma Faggio.</td>
+</tr><tr>
+<td><strong>Spawn Buzzard</strong><code>lp spawn_buzzard</code></td>
+<td>Spawna um helicóptero Buzzard.</td>
+</tr><tr>
+<td><strong>Spawn Bus</strong><code>lp spawn_bus</code></td>
+<td>Spawna um ônibus.</td>
+</tr><tr>
+<td><strong>Spawn Blimp</strong><code>lp spawn_blimp</code></td>
+<td>Spawna um Blimp.</td>
+</tr><tr>
+<td><strong>Spawn Dump</strong><code>lp spawn_dump</code></td>
+<td>Spawna um caminhão Dump.</td>
+</tr><tr>
+<td><strong>Spawn Monster Truck</strong><code>lp spawn_monster</code></td>
+<td>Spawna um Monster Truck.</td>
+</tr><tr>
+<td><strong>Spawn Cargo Plane</strong><code>lp spawn_cargo_plane</code></td>
+<td>Spawna um Cargo Plane.</td>
+</tr><tr>
+<td><strong>Spawn Boat</strong><code>lp spawn_boat</code></td>
+<td>Spawna um barco.</td>
+</tr><tr>
+<td><strong>Repair Current Vehicle</strong><code>lp repair_current_vehicle</code></td>
+<td>Repara o veículo atual.</td>
+</tr><tr>
+<td><strong>Boost Current Vehicle</strong><code>lp boost_vehicle</code></td>
+<td>Dá impulso no veículo atual.</td>
+</tr><tr>
+<td><strong>Flip Current Vehicle</strong><code>lp flip_vehicle</code></td>
+<td>Desvira o veículo atual.</td>
+</tr><tr>
+<td><strong>Break Vehicle Engine</strong><code>lp break_vehicle_engine</code></td>
+<td>Quebra/desliga o motor do veículo atual.</td>
+</tr><tr>
+<td><strong>Delete Player Vehicle</strong><code>lp delete_player_vehicle</code></td>
+<td>Remove o veículo atual do player.</td>
+</tr><tr>
+<td><strong>Explode Current Vehicle</strong><code>lp explode_current_vehicle</code></td>
+<td>Explode o veículo atual ou cria explosão próxima.</td>
+</tr><tr>
+<td><strong>Pop Vehicle Tires</strong><code>lp pop_vehicle_tires</code></td>
+<td>Fura os pneus do veículo atual.</td>
+</tr><tr>
+<td><strong>Launch Nearby Vehicles Up</strong><code>lp launch_nearby_vehicles</code></td>
+<td>Lança veículos próximos para cima.</td>
+</tr><tr>
+<td><strong>Flip Nearby Vehicles</strong><code>lp flip_nearby_vehicles</code></td>
+<td>Vira veículos próximos.</td>
+</tr><tr>
+<td><strong>Random Vehicle Complete Tuning</strong><code>lp random_vehicle_complete_tuning</code></td>
+<td>Aplica uma tunagem completa aleatória no veículo atual.</td>
+</tr><tr>
+<td><strong>Random Vehicle Part Tuning</strong><code>lp random_vehicle_part_tuning</code></td>
+<td>Altera uma peça/tunagem aleatória do veículo atual.</td>
+</tr><tr>
+<td><strong>Need For Speed</strong><code>lp need_for_speed</code></td>
+<td>Aumenta a velocidade/boost do veículo para um efeito de corrida.</td>
+</tr><tr>
+<td><strong>Invisible Vehicles</strong><code>lp invisible_vehicles</code></td>
+<td>Deixa os veículos próximos invisíveis por 12 segundos e depois volta ao normal.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>NPCs/Inimigos <span>13 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Explosive Zombies</strong><code>lp explosive_zombies</code></td>
+<td>Invasão temporária de zumbis explosivos que perseguem o player.</td>
+</tr><tr>
+<td><strong>Spawn Attackers</strong><code>lp spawn_attackers</code></td>
+<td>Spawna inimigos perto do player.</td>
+</tr><tr>
+<td><strong>Spawn Armed Attackers</strong><code>lp spawn_armed_attackers</code></td>
+<td>Spawna inimigos armados perto do player.</td>
+</tr><tr>
+<td><strong>Spawn Angry Cop</strong><code>lp spawn_angry_cop</code></td>
+<td>Spawna policiais agressivos.</td>
+</tr><tr>
+<td><strong>Spawn Extreme Angry Cop</strong><code>lp spawn_extreme_angry_cop</code></td>
+<td>Spawna policiais/SWAT agressivos.</td>
+</tr><tr>
+<td><strong>Spawn Moto Cops</strong><code>lp spawn_moto_cops</code></td>
+<td>Spawna policiais em motos.</td>
+</tr><tr>
+<td><strong>Spawn Moto Bandits</strong><code>lp spawn_moto_bandits</code></td>
+<td>Spawna bandidos em motos.</td>
+</tr><tr>
+<td><strong>Spawn Angry Alien</strong><code>lp spawn_angry_alien</code></td>
+<td>Spawna alien agressivo.</td>
+</tr><tr>
+<td><strong>Spawn Killer Clown</strong><code>lp spawn_clown</code></td>
+<td>Spawna palhaços/inimigos.</td>
+</tr><tr>
+<td><strong>Spawn Angry Chimp</strong><code>lp spawn_monkey</code></td>
+<td>Spawna chimpanzés agressivos.</td>
+</tr><tr>
+<td><strong>Spawn Rifle Chimp</strong><code>lp spawn_rifle_chimp</code></td>
+<td>Spawna um chimpanzé armado com rifle.</td>
+</tr><tr>
+<td><strong>Spawn Poodle</strong><code>lp spawn_poodle</code></td>
+<td>Spawna poodles.</td>
+</tr><tr>
+<td><strong>Spawn Single Armed Attacker</strong><code>lp spawn_single_armed_attacker</code></td>
+<td>Spawna apenas um NPC armado agressivo.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Armas <span>10 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Give RPG</strong><code>lp give_rpg</code></td>
+<td>Dá RPG ao player.</td>
+</tr><tr>
+<td><strong>Give Sniper Rifle</strong><code>lp give_sniper</code></td>
+<td>Dá sniper ao player.</td>
+</tr><tr>
+<td><strong>Give Minigun</strong><code>lp give_minigun</code></td>
+<td>Dá minigun ao player.</td>
+</tr><tr>
+<td><strong>Give Railgun</strong><code>lp give_railgun</code></td>
+<td>Dá railgun ao player.</td>
+</tr><tr>
+<td><strong>Give Shotgun</strong><code>lp give_shotgun</code></td>
+<td>Dá shotgun ao player.</td>
+</tr><tr>
+<td><strong>Give Carbine Rifle</strong><code>lp give_carbine</code></td>
+<td>Dá carbine rifle ao player.</td>
+</tr><tr>
+<td><strong>Give Random Weapon</strong><code>lp give_random_weapon</code></td>
+<td>Dá uma arma forte ao player.</td>
+</tr><tr>
+<td><strong>Remove Player Weapons</strong><code>lp remove_weapons</code></td>
+<td>Remove todas as armas do player.</td>
+</tr><tr>
+<td><strong>Give Nearby Peds RPG</strong><code>lp give_everyone_rpg</code></td>
+<td>Dá RPG para NPCs próximos e faz atacar.</td>
+</tr><tr>
+<td><strong>Give Nearby Peds Minigun</strong><code>lp give_everyone_minigun</code></td>
+<td>Dá arma pesada para NPCs próximos e faz atacar.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Clima/Tempo <span>12 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Extra Sunny Weather</strong><code>lp extra_sunny_weather</code></td>
+<td>Define clima extra ensolarado.</td>
+</tr><tr>
+<td><strong>Stormy Weather</strong><code>lp stormy_weather</code></td>
+<td>Define tempestade.</td>
+</tr><tr>
+<td><strong>Rainy Weather</strong><code>lp rainy_weather</code></td>
+<td>Define chuva.</td>
+</tr><tr>
+<td><strong>Foggy Weather</strong><code>lp foggy_weather</code></td>
+<td>Define neblina.</td>
+</tr><tr>
+<td><strong>Snowy Weather</strong><code>lp snowy_weather</code></td>
+<td>Define neve.</td>
+</tr><tr>
+<td><strong>Neutral Weather</strong><code>lp neutral_weather</code></td>
+<td>Define clima limpo.</td>
+</tr><tr>
+<td><strong>Set Time To Morning</strong><code>lp set_time_morning</code></td>
+<td>Define horário de manhã.</td>
+</tr><tr>
+<td><strong>Set Time To Daytime</strong><code>lp set_time_daytime</code></td>
+<td>Define horário de dia.</td>
+</tr><tr>
+<td><strong>Set Time To Evening</strong><code>lp set_time_evening</code></td>
+<td>Define horário de tarde/noite.</td>
+</tr><tr>
+<td><strong>Set Time To Night</strong><code>lp set_time_night</code></td>
+<td>Define horário de noite.</td>
+</tr><tr>
+<td><strong>Blackout On</strong><code>lp blackout_on</code></td>
+<td>Ativa blackout.</td>
+</tr><tr>
+<td><strong>Blackout Off</strong><code>lp blackout_off</code></td>
+<td>Desativa blackout.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Teleporte <span>7 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Teleport Up</strong><code>lp teleport_up</code></td>
+<td>Teleporta o player para cima.</td>
+</tr><tr>
+<td><strong>Teleport Forward</strong><code>lp teleport_forward</code></td>
+<td>Teleporta o player para frente.</td>
+</tr><tr>
+<td><strong>Teleport To Random Location</strong><code>lp teleport_random_location</code></td>
+<td>Teleporta para local aleatório próximo.</td>
+</tr><tr>
+<td><strong>Teleport To LS Airport</strong><code>lp teleport_ls_airport</code></td>
+<td>Teleporta para o aeroporto de LS.</td>
+</tr><tr>
+<td><strong>Teleport To Maze Bank Tower</strong><code>lp teleport_maze_bank</code></td>
+<td>Teleporta para o topo do Maze Bank.</td>
+</tr><tr>
+<td><strong>Teleport To Fort Zancudo</strong><code>lp teleport_fort_zancudo</code></td>
+<td>Teleporta para Fort Zancudo.</td>
+</tr><tr>
+<td><strong>Teleport To Mount Chiliad</strong><code>lp teleport_mount_chiliad</code></td>
+<td>Teleporta para Mount Chiliad.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Visual/Tela <span>5 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>No Radar</strong><code>lp no_radar</code></td>
+<td>Oculta radar/HUD parcial.</td>
+</tr><tr>
+<td><strong>No HUD</strong><code>lp no_hud</code></td>
+<td>Oculta HUD/radar parcial.</td>
+</tr><tr>
+<td><strong>Night Vision</strong><code>lp night_vision</code></td>
+<td>Ativa visão noturna.</td>
+</tr><tr>
+<td><strong>Heat Vision</strong><code>lp heat_vision</code></td>
+<td>Ativa visão térmica.</td>
+</tr><tr>
+<td><strong>Shake Camera</strong><code>lp shake_camera</code></td>
+<td>Treme a câmera.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+</div>
+</div>
+</details>
+<details class="minecraft-plugin-detail command-plugin-detail game-command-detail" id="sons-forest-details">
+<summary>
+<span>
+<strong>Sons Of The Forest</strong>
+<small>Integração via bridge BepInEx para invocar canibais, mutantes, itens, armas, munições, alterar tempo, curar e criar eventos de sobrevivência.</small>
+</span>
+<span class="plugin-meta"><b class="plan-pill free-pill">FREE</b><em>72 comandos</em></span>
+</summary>
+<div class="plugin-body">
+<div class="game-doc-hero">
+<div>
+<span class="minecraft-kicker">Template oficial</span>
+<h3>Sons of the Forest Oficial</h3>
+<p>Integração via bridge BepInEx para invocar canibais, mutantes, itens, armas, munições, alterar tempo, curar e criar eventos de sobrevivência.</p>
+<div class="minecraft-flow"><span>TikTok Live</span><strong>→</strong><span>Modelo Sons</span><strong>→</strong><span>Bridge local</span><strong>→</strong><span>Ação no jogo</span></div>
+</div>
+<img alt="Sons Of The Forest no LivePlay" decoding="async" loading="lazy" src="./assets/images/sons.webp"/>
+</div>
+<div class="game-doc-info-grid">
+<article>
+<strong>Plano</strong>
+<p>Template oficial <b>FREE</b> para criar modelos prontos no LivePlay.</p>
+</article>
+<article>
+<strong>Bridge</strong>
+<p>BepInEx IL2CPP / bridge local LivePlay</p>
+</article>
+<article>
+<strong>Porta local</strong>
+<p><code>35952</code></p>
+</article>
+<article>
+<strong>Comandos</strong>
+<p>72 comandos organizados em 9 categorias.</p>
+</article>
+</div>
+<div class="plugin-usage-box">
+<strong>Como usar nos modelos</strong>
+<code>sotf:addcharacter cannibal</code>
+<p>Escolha o comando, vincule a um gift, like, follow, share ou chat, e o LivePlay envia a ação para o bridge do jogo.</p>
+</div>
+<div class="command-groups">
+<details class="command-group">
+<summary>Canibais <span>10 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Bone Club Cannibal</strong><code>sotf:addcharacter cannibal</code></td>
+<td>Invoca Bone Club Cannibal perto do jogador.</td>
+</tr><tr>
+<td><strong>Brute Cannibal</strong><code>spawn_heavy</code></td>
+<td>Invoca Brute Cannibal perto do jogador.</td>
+</tr><tr>
+<td><strong>Dirty Cannibal</strong><code>sotf:addcharacter cannibal</code></td>
+<td>Invoca Dirty Cannibal perto do jogador.</td>
+</tr><tr>
+<td><strong>Effigy Armor Cannibal</strong><code>sotf:addcharacter cannibal</code></td>
+<td>Invoca Effigy Armor Cannibal perto do jogador.</td>
+</tr><tr>
+<td><strong>Gold Mask Cannibal</strong><code>sotf:addcharacter cannibal</code></td>
+<td>Invoca Gold Mask Cannibal perto do jogador.</td>
+</tr><tr>
+<td><strong>Masked Cannibal</strong><code>sotf:addcharacter cannibal</code></td>
+<td>Invoca Masked Cannibal perto do jogador.</td>
+</tr><tr>
+<td><strong>Muddy Cannibal</strong><code>sotf:addcharacter muddy</code></td>
+<td>Invoca Muddy Cannibal perto do jogador.</td>
+</tr><tr>
+<td><strong>Regular Cannibal</strong><code>spawn_cannibal</code></td>
+<td>Invoca Regular Cannibal perto do jogador.</td>
+</tr><tr>
+<td><strong>Titan Cannibal</strong><code>sotf:addcharacter fat</code></td>
+<td>Invoca Titan Cannibal perto do jogador.</td>
+</tr><tr>
+<td><strong>Torch Cannibal</strong><code>sotf:addcharacter cannibal</code></td>
+<td>Invoca Torch Cannibal perto do jogador.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Mutantes <span>12 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Armsy Mutant</strong><code>sotf:addcharacter armsy</code></td>
+<td>Invoca Armsy Mutant perto do jogador.</td>
+</tr><tr>
+<td><strong>Blind Mutant Faceless</strong><code>sotf:addcharacter mrpuffy</code></td>
+<td>Invoca Blind Mutant Faceless perto do jogador.</td>
+</tr><tr>
+<td><strong>Caterpillar Mutant</strong><code>sotf:addcharacter john2</code></td>
+<td>Invoca Caterpillar Mutant perto do jogador.</td>
+</tr><tr>
+<td><strong>Creepy Virginia Mutant</strong><code>sotf:addcharacter creepyvirginia</code></td>
+<td>Invoca Creepy Virginia Mutant perto do jogador.</td>
+</tr><tr>
+<td><strong>Demon Mutant</strong><code>spawn_demon</code></td>
+<td>Invoca Demon Mutant perto do jogador.</td>
+</tr><tr>
+<td><strong>Demon Boss</strong><code>sotf:addcharacter demonboss 1</code></td>
+<td>Invoca Demon Boss perto do jogador.</td>
+</tr><tr>
+<td><strong>Fingers Mutant</strong><code>spawn_mutant</code></td>
+<td>Invoca Fingers Mutant perto do jogador.</td>
+</tr><tr>
+<td><strong>Holey Mutant</strong><code>sotf:addcharacter holey</code></td>
+<td>Invoca Holey Mutant perto do jogador.</td>
+</tr><tr>
+<td><strong>Legsy Mutant</strong><code>sotf:addcharacter legsy</code></td>
+<td>Invoca Legsy Mutant perto do jogador.</td>
+</tr><tr>
+<td><strong>Mutant Baby</strong><code>spawn_baby</code></td>
+<td>Invoca Mutant Baby perto do jogador.</td>
+</tr><tr>
+<td><strong>Sluggy The Blob Mutant</strong><code>sotf:addcharacter sluggy</code></td>
+<td>Invoca Sluggy The Blob Mutant perto do jogador.</td>
+</tr><tr>
+<td><strong>Twins Mutant</strong><code>spawn_twins</code></td>
+<td>Invoca Twins Mutant perto do jogador.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Recursos e Consumíveis <span>6 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Duct Tape</strong><code>sotf:additem 419</code></td>
+<td>Adiciona Duct Tape ao inventário.</td>
+</tr><tr>
+<td><strong>Flask</strong><code>sotf:additem 426</code></td>
+<td>Adiciona Flask ao inventário.</td>
+</tr><tr>
+<td><strong>Lighter</strong><code>sotf:additem 413</code></td>
+<td>Adiciona Lighter ao inventário.</td>
+</tr><tr>
+<td><strong>Meds First Aid Pouch</strong><code>sotf:additem 437</code></td>
+<td>Adiciona Meds First Aid Pouch ao inventário.</td>
+</tr><tr>
+<td><strong>Rope</strong><code>sotf:additem 403</code></td>
+<td>Adiciona Rope ao inventário.</td>
+</tr><tr>
+<td><strong>Tarp</strong><code>sotf:additem 504</code></td>
+<td>Adiciona Tarp ao inventário.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Ferramentas e Equipamentos <span>13 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Air Tank</strong><code>sotf:additem 469</code></td>
+<td>Adiciona Air Tank ao inventário.</td>
+</tr><tr>
+<td><strong>Binoculars</strong><code>sotf:additem 341</code></td>
+<td>Adiciona Binoculars ao inventário.</td>
+</tr><tr>
+<td><strong>Can Opener</strong><code>sotf:additem 432</code></td>
+<td>Adiciona Can Opener ao inventário.</td>
+</tr><tr>
+<td><strong>Flashlight</strong><code>sotf:additem 471</code></td>
+<td>Adiciona Flashlight ao inventário.</td>
+</tr><tr>
+<td><strong>GPS Locator</strong><code>sotf:additem 529</code></td>
+<td>Adiciona GPS Locator ao inventário.</td>
+</tr><tr>
+<td><strong>GPS Tracker</strong><code>sotf:additem 412</code></td>
+<td>Adiciona GPS Tracker ao inventário.</td>
+</tr><tr>
+<td><strong>Night Vision Goggles</strong><code>sotf:additem 354</code></td>
+<td>Adiciona Night Vision Goggles ao inventário.</td>
+</tr><tr>
+<td><strong>Rebreather</strong><code>sotf:additem 444</code></td>
+<td>Adiciona Rebreather ao inventário.</td>
+</tr><tr>
+<td><strong>Repair Tool</strong><code>sotf:additem 422</code></td>
+<td>Adiciona Repair Tool ao inventário.</td>
+</tr><tr>
+<td><strong>Rope Gun</strong><code>sotf:additem 522</code></td>
+<td>Adiciona Rope Gun ao inventário.</td>
+</tr><tr>
+<td><strong>Shovel</strong><code>sotf:additem 485</code></td>
+<td>Adiciona Shovel ao inventário.</td>
+</tr><tr>
+<td><strong>Walkie Talkie</strong><code>sotf:additem 486</code></td>
+<td>Adiciona Walkie Talkie ao inventário.</td>
+</tr><tr>
+<td><strong>Wristwatch</strong><code>sotf:additem 410</code></td>
+<td>Adiciona Wristwatch ao inventário.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Armas Corpo a Corpo <span>12 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Crafted Club</strong><code>sotf:additem 477</code></td>
+<td>Adiciona Crafted Club ao inventário.</td>
+</tr><tr>
+<td><strong>Crafted Spear</strong><code>sotf:additem 474</code></td>
+<td>Adiciona Crafted Spear ao inventário.</td>
+</tr><tr>
+<td><strong>Electric Chainsaw</strong><code>sotf:additem 394</code></td>
+<td>Adiciona Electric Chainsaw ao inventário.</td>
+</tr><tr>
+<td><strong>Firefighter Axe</strong><code>sotf:additem 431</code></td>
+<td>Adiciona Firefighter Axe ao inventário.</td>
+</tr><tr>
+<td><strong>Guitar</strong><code>sotf:additem 340</code></td>
+<td>Adiciona Guitar ao inventário.</td>
+</tr><tr>
+<td><strong>Katana</strong><code>sotf:additem 367</code></td>
+<td>Adiciona Katana ao inventário.</td>
+</tr><tr>
+<td><strong>Machete</strong><code>sotf:additem 359</code></td>
+<td>Adiciona Machete ao inventário.</td>
+</tr><tr>
+<td><strong>Modern Axe</strong><code>sotf:additem 356</code></td>
+<td>Adiciona Modern Axe ao inventário.</td>
+</tr><tr>
+<td><strong>Putter</strong><code>sotf:additem 525</code></td>
+<td>Adiciona Putter ao inventário.</td>
+</tr><tr>
+<td><strong>Stun Baton</strong><code>sotf:additem 396</code></td>
+<td>Adiciona Stun Baton ao inventário.</td>
+</tr><tr>
+<td><strong>Tactical Axe</strong><code>sotf:additem 379</code></td>
+<td>Adiciona Tactical Axe ao inventário.</td>
+</tr><tr>
+<td><strong>Utility Knife</strong><code>sotf:additem 380</code></td>
+<td>Adiciona Utility Knife ao inventário.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Armas de Longo Alcance <span>8 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Compound Bow</strong><code>sotf:additem 360</code></td>
+<td>Adiciona Compound Bow ao inventário.</td>
+</tr><tr>
+<td><strong>Crafted Bow</strong><code>sotf:additem 443</code></td>
+<td>Adiciona Crafted Bow ao inventário.</td>
+</tr><tr>
+<td><strong>Crossbow</strong><code>sotf:additem 365</code></td>
+<td>Adiciona Crossbow ao inventário.</td>
+</tr><tr>
+<td><strong>Pistol</strong><code>sotf:additem 355</code></td>
+<td>Adiciona Pistol ao inventário.</td>
+</tr><tr>
+<td><strong>Revolver</strong><code>sotf:additem 386</code></td>
+<td>Adiciona Revolver ao inventário.</td>
+</tr><tr>
+<td><strong>Rifle</strong><code>sotf:additem 361</code></td>
+<td>Adiciona Rifle ao inventário.</td>
+</tr><tr>
+<td><strong>Shotgun</strong><code>sotf:additem 358</code></td>
+<td>Adiciona Shotgun ao inventário.</td>
+</tr><tr>
+<td><strong>Stun Gun</strong><code>sotf:additem 353</code></td>
+<td>Adiciona Stun Gun ao inventário.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Munições <span>8 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Munição Pistola 9mm</strong><code>sotf:addammo 362 10</code></td>
+<td>Adiciona munição 9mm para a pistola.</td>
+</tr><tr>
+<td><strong>Munição Buckshot</strong><code>sotf:addammo 364 10</code></td>
+<td>Adiciona munição buckshot da shotgun.</td>
+</tr><tr>
+<td><strong>Munição Revolver 9mm</strong><code>sotf:addammo 362 10</code></td>
+<td>Adiciona munição 9mm para o revólver. O revólver usa a mesma munição 9mm da pistola.</td>
+</tr><tr>
+<td><strong>Munição Rifle</strong><code>sotf:addammo 387 10</code></td>
+<td>Adiciona munição de rifle.</td>
+</tr><tr>
+<td><strong>Virotes de Besta</strong><code>sotf:addammo 368 10</code></td>
+<td>Adiciona virotes de besta.</td>
+</tr><tr>
+<td><strong>Flechas Artesanais</strong><code>sotf:addammo 507 10</code></td>
+<td>Adiciona flechas artesanais.</td>
+</tr><tr>
+<td><strong>Munição Stun Gun</strong><code>sotf:addammo 369 10</code></td>
+<td>Adiciona munição do stun gun.</td>
+</tr><tr>
+<td><strong>Munição Slug</strong><code>sotf:addammo 363 10</code></td>
+<td>Adiciona munição slug da shotgun.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Tempo <span>2 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Virar Dia</strong><code>set_time_day</code></td>
+<td>Muda o horário do jogo para dia.</td>
+</tr><tr>
+<td><strong>Virar Noite</strong><code>set_time_night</code></td>
+<td>Muda o horário do jogo para noite.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Player <span>1 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Curar Player</strong><code>heal_player</code></td>
+<td>Regenera a vida do jogador.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+</div>
+</div>
+</details>
+<details class="minecraft-plugin-detail command-plugin-detail game-command-detail" id="green-hell-details">
+<summary>
+<span>
+<strong>Green Hell</strong>
+<small>Bridge BepInEx para eventos de selva: status negativos, dano, ameaças, animais, comida, medicina, ferramentas, armas e comandos de debug.</small>
+</span>
+<span class="plugin-meta"><b class="plan-pill free-pill">FREE</b><em>33 comandos</em></span>
+</summary>
+<div class="plugin-body">
+<div class="game-doc-hero">
+<div>
+<span class="minecraft-kicker">Template oficial</span>
+<h3>Green Hell Oficial</h3>
+<p>Bridge BepInEx para eventos de selva: status negativos, dano, ameaças, animais, comida, medicina, ferramentas, armas e comandos de debug.</p>
+<div class="minecraft-flow"><span>TikTok Live</span><strong>→</strong><span>Modelo Green Hell</span><strong>→</strong><span>Bridge local</span><strong>→</strong><span>Ação no jogo</span></div>
+</div>
+<img alt="Green Hell no LivePlay" decoding="async" loading="lazy" src="./assets/images/green-hell.webp"/>
+</div>
+<div class="game-doc-info-grid">
+<article>
+<strong>Plano</strong>
+<p>Template oficial <b>FREE</b> para criar modelos prontos no LivePlay.</p>
+</article>
+<article>
+<strong>Bridge</strong>
+<p>BepInEx / bridge local LivePlay</p>
+</article>
+<article>
+<strong>Porta local</strong>
+<p><code>35953</code></p>
+</article>
+<article>
+<strong>Comandos</strong>
+<p>33 comandos organizados em 8 categorias.</p>
+</article>
+</div>
+<div class="plugin-usage-box">
+<strong>Como usar nos modelos</strong>
+<code>gh:damage_player</code>
+<p>Escolha o comando, vincule a um gift, like, follow, share ou chat, e o LivePlay envia a ação para o bridge do jogo.</p>
+</div>
+<div class="command-groups">
+<details class="command-group">
+<summary>Player <span>1 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Dar Dano</strong><code>gh:damage_player</code></td>
+<td>Tenta causar dano leve ao jogador.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Status <span>2 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Aplicar Veneno</strong><code>gh:poison_player</code></td>
+<td>Tenta aplicar efeito de veneno/status negativo.</td>
+</tr><tr>
+<td><strong>Aplicar Febre</strong><code>gh:fever_player</code></td>
+<td>Tenta aplicar febre/status negativo.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Ameaças <span>2 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Spawn Cobra</strong><code>gh:spawn_snake</code></td>
+<td>Envia o comando real spawn_snake para o bridge.</td>
+</tr><tr>
+<td><strong>Spawn Jaguar</strong><code>gh:spawn_jaguar</code></td>
+<td>Envia o comando real spawn_jaguar para o bridge.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Animais <span>4 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Spawn Armadillo</strong><code>gh:spawn_armadillo</code></td>
+<td>Tenta invocar Armadillo usando correspondência estrita de prefab/entidade do Green Hell.</td>
+</tr><tr>
+<td><strong>Spawn Capybara</strong><code>gh:spawn_capybara</code></td>
+<td>Tenta invocar Capybara usando correspondência estrita de prefab/entidade do Green Hell.</td>
+</tr><tr>
+<td><strong>Spawn Puma</strong><code>gh:spawn_puma</code></td>
+<td>Tenta invocar Puma usando correspondência estrita de prefab/entidade do Green Hell.</td>
+</tr><tr>
+<td><strong>Spawn Tortoise</strong><code>gh:spawn_tortoise</code></td>
+<td>Tenta invocar Tortoise usando correspondência estrita de prefab/entidade do Green Hell.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Debug <span>1 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Debug Spawn/Animais</strong><code>gh:debug_greenhell_spawn_help</code></td>
+<td>Gera no LogOutput.log uma varredura de comandos, métodos e candidatos relacionados a spawn para investigar o spawner real do Green Hell.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Comida <span>2 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Give Banana</strong><code>gh:give_banana</code></td>
+<td>Tenta entregar Banana ao jogador; se não houver API de inventário compatível, tenta dropar o item exatamente identificado no jogador.</td>
+</tr><tr>
+<td><strong>Give Coconut</strong><code>gh:give_coconut</code></td>
+<td>Tenta entregar Coconut ao jogador; se não houver API de inventário compatível, tenta dropar o item exatamente identificado no jogador.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Medicina <span>7 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Give Ants</strong><code>gh:give_ants</code></td>
+<td>Tenta entregar Ants ao jogador por inventário/drop estrito.</td>
+</tr><tr>
+<td><strong>Give Ash Dressing</strong><code>gh:give_ash_dressing</code></td>
+<td>Tenta entregar Ash Dressing ao jogador por inventário/drop estrito.</td>
+</tr><tr>
+<td><strong>Give Goliath Dressing</strong><code>gh:give_goliath_dressing</code></td>
+<td>Tenta entregar Goliath Dressing ao jogador por inventário/drop estrito.</td>
+</tr><tr>
+<td><strong>Give Honey Dressing</strong><code>gh:give_honey_dressing</code></td>
+<td>Tenta entregar Honey Dressing ao jogador por inventário/drop estrito.</td>
+</tr><tr>
+<td><strong>Give Leaf Bandage</strong><code>gh:give_leaf_bandage</code></td>
+<td>Tenta entregar Leaf Bandage ao jogador por inventário/drop estrito.</td>
+</tr><tr>
+<td><strong>Give Lily Dressing</strong><code>gh:give_lily_dressing</code></td>
+<td>Tenta entregar Lily Dressing ao jogador por inventário/drop estrito.</td>
+</tr><tr>
+<td><strong>Give Painkillers</strong><code>gh:give_painkillers</code></td>
+<td>Tenta entregar Painkillers ao jogador por inventário/drop estrito.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Ferramentas e armas <span>14 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Give Arrow</strong><code>gh:give_arrow</code></td>
+<td>Tenta entregar Arrow ao jogador por inventário/drop estrito.</td>
+</tr><tr>
+<td><strong>Give Axe</strong><code>gh:give_axe</code></td>
+<td>Tenta entregar Axe ao jogador por inventário/drop estrito.</td>
+</tr><tr>
+<td><strong>Give Blade Axe</strong><code>gh:give_blade_axe</code></td>
+<td>Tenta entregar Blade Axe ao jogador por inventário/drop estrito.</td>
+</tr><tr>
+<td><strong>Give Bone Axe</strong><code>gh:give_bone_axe</code></td>
+<td>Tenta entregar Bone Axe ao jogador por inventário/drop estrito.</td>
+</tr><tr>
+<td><strong>Give Bow</strong><code>gh:give_bow</code></td>
+<td>Tenta entregar Bow ao jogador por inventário/drop estrito.</td>
+</tr><tr>
+<td><strong>Give Obsidian Axe</strong><code>gh:give_obsidian_axe</code></td>
+<td>Tenta entregar Obsidian Axe ao jogador por inventário/drop estrito.</td>
+</tr><tr>
+<td><strong>Give Pickaxe</strong><code>gh:give_pickaxe</code></td>
+<td>Tenta entregar Pickaxe ao jogador por inventário/drop estrito.</td>
+</tr><tr>
+<td><strong>Give Spear</strong><code>gh:give_spear</code></td>
+<td>Tenta entregar Spear ao jogador por inventário/drop estrito.</td>
+</tr><tr>
+<td><strong>Give Stone Axe</strong><code>gh:give_stone_axe</code></td>
+<td>Tenta entregar Stone Axe ao jogador por inventário/drop estrito.</td>
+</tr><tr>
+<td><strong>Give Stone Knife</strong><code>gh:give_stone_knife</code></td>
+<td>Tenta entregar Stone Knife ao jogador por inventário/drop estrito.</td>
+</tr><tr>
+<td><strong>Give Stone Spear Alt</strong><code>gh:give_stone_spear_alt</code></td>
+<td>Tenta entregar Stone Spear Alt ao jogador por inventário/drop estrito.</td>
+</tr><tr>
+<td><strong>Give Stone Spear</strong><code>gh:give_stone_spear</code></td>
+<td>Tenta entregar Stone Spear ao jogador por inventário/drop estrito.</td>
+</tr><tr>
+<td><strong>Give Torch</strong><code>gh:give_torch</code></td>
+<td>Tenta entregar Torch ao jogador por inventário/drop estrito.</td>
+</tr><tr>
+<td><strong>Give Wooden Club</strong><code>gh:give_wooden_club</code></td>
+<td>Tenta entregar Wooden Club ao jogador por inventário/drop estrito.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+</div>
+</div>
+</details>
+<details class="minecraft-plugin-detail command-plugin-detail game-command-detail" id="valheim-details">
+<summary>
+<span>
+<strong>Valheim</strong>
+<small>Template oficial para invocar bosses, criaturas, inimigos, aliados, itens, armas, armaduras, comida, poções, clima e tempo no Valheim.</small>
+</span>
+<span class="plugin-meta"><b class="plan-pill free-pill">FREE</b><em>128 comandos</em></span>
+</summary>
+<div class="plugin-body">
+<div class="game-doc-hero">
+<div>
+<span class="minecraft-kicker">Template oficial</span>
+<h3>Valheim Oficial</h3>
+<p>Template oficial para invocar bosses, criaturas, inimigos, aliados, itens, armas, armaduras, comida, poções, clima e tempo no Valheim.</p>
+<div class="minecraft-flow"><span>TikTok Live</span><strong>→</strong><span>Modelo Valheim</span><strong>→</strong><span>Bridge local</span><strong>→</strong><span>Ação no jogo</span></div>
+</div>
+<img alt="Valheim no LivePlay" decoding="async" loading="lazy" src="./assets/images/valheim-logo.webp"/>
+</div>
+<div class="game-doc-info-grid">
+<article>
+<strong>Plano</strong>
+<p>Template oficial <b>FREE</b> para criar modelos prontos no LivePlay.</p>
+</article>
+<article>
+<strong>Bridge</strong>
+<p>BepInEx / bridge local LivePlay</p>
+</article>
+<article>
+<strong>Porta local</strong>
+<p><code>35954</code></p>
+</article>
+<article>
+<strong>Comandos</strong>
+<p>128 comandos organizados em 21 categorias.</p>
+</article>
+</div>
+<div class="plugin-usage-box">
+<strong>Como usar nos modelos</strong>
+<code>vh:spawn_eikthyr</code>
+<p>Escolha o comando, vincule a um gift, like, follow, share ou chat, e o LivePlay envia a ação para o bridge do jogo.</p>
+</div>
+<div class="command-groups">
+<details class="command-group">
+<summary>Bosses <span>7 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Spawn Eikthyr</strong><code>vh:spawn_eikthyr</code></td>
+<td>Invoca o boss Eikthyr.</td>
+</tr><tr>
+<td><strong>Spawn The Elder</strong><code>vh:spawn_elder</code></td>
+<td>Invoca o boss The Elder.</td>
+</tr><tr>
+<td><strong>Spawn Bonemass</strong><code>vh:spawn_bonemass</code></td>
+<td>Invoca o boss Bonemass.</td>
+</tr><tr>
+<td><strong>Spawn Moder</strong><code>vh:spawn_moder</code></td>
+<td>Invoca o boss Moder.</td>
+</tr><tr>
+<td><strong>Spawn Yagluth</strong><code>vh:spawn_yagluth</code></td>
+<td>Invoca o boss Yagluth.</td>
+</tr><tr>
+<td><strong>Spawn Seeker Queen</strong><code>vh:spawn_seeker_queen</code></td>
+<td>Invoca a Seeker Queen.</td>
+</tr><tr>
+<td><strong>Spawn Fader</strong><code>vh:spawn_fader</code></td>
+<td>Invoca o boss Fader.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Domesticaveis <span>10 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Spawn Boar</strong><code>vh:spawn_boar</code></td>
+<td>Invoca javalis.</td>
+</tr><tr>
+<td><strong>Spawn Boar Piggy</strong><code>vh:spawn_boar_piggy</code></td>
+<td>Invoca filhotes de javali.</td>
+</tr><tr>
+<td><strong>Spawn Wolf</strong><code>vh:spawn_wolf</code></td>
+<td>Invoca lobos.</td>
+</tr><tr>
+<td><strong>Spawn Wolf Cub</strong><code>vh:spawn_wolf_cub</code></td>
+<td>Invoca filhotes de lobo.</td>
+</tr><tr>
+<td><strong>Spawn Lox</strong><code>vh:spawn_lox</code></td>
+<td>Invoca Lox.</td>
+</tr><tr>
+<td><strong>Spawn Lox Calf</strong><code>vh:spawn_lox_calf</code></td>
+<td>Invoca filhote de Lox.</td>
+</tr><tr>
+<td><strong>Spawn Chicken</strong><code>vh:spawn_chicken</code></td>
+<td>Invoca galinhas.</td>
+</tr><tr>
+<td><strong>Spawn Hen</strong><code>vh:spawn_hen</code></td>
+<td>Invoca galinhas adultas.</td>
+</tr><tr>
+<td><strong>Spawn Asksvin</strong><code>vh:spawn_asksvin</code></td>
+<td>Invoca Asksvin.</td>
+</tr><tr>
+<td><strong>Spawn Asksvin Hatchling</strong><code>vh:spawn_asksvin_hatchling</code></td>
+<td>Invoca filhote de Asksvin.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Animais <span>2 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Spawn Deer</strong><code>vh:spawn_deer</code></td>
+<td>Invoca cervos.</td>
+</tr><tr>
+<td><strong>Spawn Hare</strong><code>vh:spawn_hare</code></td>
+<td>Invoca lebres.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Inimigos - Fácil <span>4 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Spawn Neck</strong><code>vh:spawn_neck</code></td>
+<td>Invoca Necks.</td>
+</tr><tr>
+<td><strong>Spawn Greyling</strong><code>vh:spawn_greyling</code></td>
+<td>Invoca Greylings.</td>
+</tr><tr>
+<td><strong>Spawn Greydwarf</strong><code>vh:spawn_greydwarf</code></td>
+<td>Invoca Greydwarfs.</td>
+</tr><tr>
+<td><strong>Spawn Skeleton</strong><code>vh:spawn_skeleton</code></td>
+<td>Invoca esqueletos.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Amigos e NPCs <span>7 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Spawn Dverger</strong><code>vh:spawn_dverger</code></td>
+<td>Invoca um Dverger.</td>
+</tr><tr>
+<td><strong>Spawn Dverger Mage</strong><code>vh:spawn_dverger_mage</code></td>
+<td>Invoca um Dverger Mage.</td>
+</tr><tr>
+<td><strong>Spawn Dverger Mage Fire</strong><code>vh:spawn_dverger_mage_fire</code></td>
+<td>Invoca um Dverger Mage Fire.</td>
+</tr><tr>
+<td><strong>Spawn Dverger Mage Ice</strong><code>vh:spawn_dverger_mage_ice</code></td>
+<td>Invoca um Dverger Mage Ice.</td>
+</tr><tr>
+<td><strong>Spawn Dverger Mage Support</strong><code>vh:spawn_dverger_mage_support</code></td>
+<td>Invoca um Dverger Mage Support.</td>
+</tr><tr>
+<td><strong>Spawn Troll Amigo</strong><code>vh:spawn_troll_friendly</code></td>
+<td>Invoca um Troll amigo perto do jogador.</td>
+</tr><tr>
+<td><strong>Spawn Skeleton Friendly</strong><code>vh:spawn_skeleton_friendly</code></td>
+<td>Invoca Skeleton Friendly.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Inimigos - Médio <span>12 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Spawn Greydwarf Elite</strong><code>vh:spawn_greydwarf_elite</code></td>
+<td>Invoca Greydwarf Elite.</td>
+</tr><tr>
+<td><strong>Spawn Greydwarf Shaman</strong><code>vh:spawn_greydwarf_shaman</code></td>
+<td>Invoca Greydwarf Shaman.</td>
+</tr><tr>
+<td><strong>Spawn Blob</strong><code>vh:spawn_blob</code></td>
+<td>Invoca Blobs.</td>
+</tr><tr>
+<td><strong>Spawn Blob Elite</strong><code>vh:spawn_blob_elite</code></td>
+<td>Invoca Blob Elite.</td>
+</tr><tr>
+<td><strong>Spawn Draugr</strong><code>vh:spawn_draugr</code></td>
+<td>Invoca Draugr.</td>
+</tr><tr>
+<td><strong>Spawn Draugr Elite</strong><code>vh:spawn_draugr_elite</code></td>
+<td>Invoca Draugr Elite.</td>
+</tr><tr>
+<td><strong>Spawn Draugr Ranged</strong><code>vh:spawn_draugr_ranged</code></td>
+<td>Invoca Draugr Ranged.</td>
+</tr><tr>
+<td><strong>Spawn Leech</strong><code>vh:spawn_leech</code></td>
+<td>Invoca Leeches.</td>
+</tr><tr>
+<td><strong>Spawn Leech Cave</strong><code>vh:spawn_leech_cave</code></td>
+<td>Invoca Leech cave.</td>
+</tr><tr>
+<td><strong>Spawn Surtling</strong><code>vh:spawn_surtling</code></td>
+<td>Invoca Surtlings.</td>
+</tr><tr>
+<td><strong>Spawn Bat</strong><code>vh:spawn_bat</code></td>
+<td>Invoca morcegos.</td>
+</tr><tr>
+<td><strong>Spawn Drake</strong><code>vh:spawn_drake</code></td>
+<td>Invoca Drakes/Hatchlings.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Inimigos - Difícil <span>18 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Spawn Troll</strong><code>vh:spawn_troll</code></td>
+<td>Invoca um Troll.</td>
+</tr><tr>
+<td><strong>Spawn Skeleton Poison</strong><code>vh:spawn_skeleton_poison</code></td>
+<td>Invoca esqueleto venenoso.</td>
+</tr><tr>
+<td><strong>Spawn Abomination</strong><code>vh:spawn_abomination</code></td>
+<td>Invoca Abomination.</td>
+</tr><tr>
+<td><strong>Spawn Wraith</strong><code>vh:spawn_wraith</code></td>
+<td>Invoca Wraith.</td>
+</tr><tr>
+<td><strong>Spawn Fenring</strong><code>vh:spawn_fenring</code></td>
+<td>Invoca Fenring.</td>
+</tr><tr>
+<td><strong>Spawn Fenring Cultist</strong><code>vh:spawn_fenring_cultist</code></td>
+<td>Invoca Fenring Cultist.</td>
+</tr><tr>
+<td><strong>Spawn Stone Golem</strong><code>vh:spawn_stone_golem</code></td>
+<td>Invoca Stone Golem.</td>
+</tr><tr>
+<td><strong>Spawn Ulv</strong><code>vh:spawn_ulv</code></td>
+<td>Invoca Ulv.</td>
+</tr><tr>
+<td><strong>Spawn Deathsquito</strong><code>vh:spawn_deathsquito</code></td>
+<td>Invoca Deathsquito.</td>
+</tr><tr>
+<td><strong>Spawn Fuling</strong><code>vh:spawn_fuling</code></td>
+<td>Invoca Fulings/Goblin.</td>
+</tr><tr>
+<td><strong>Spawn Fuling Berserker</strong><code>vh:spawn_fuling_berserker</code></td>
+<td>Invoca Fuling Berserker.</td>
+</tr><tr>
+<td><strong>Spawn Fuling Shaman</strong><code>vh:spawn_fuling_shaman</code></td>
+<td>Invoca Fuling Shaman.</td>
+</tr><tr>
+<td><strong>Spawn Serpent</strong><code>vh:spawn_serpent</code></td>
+<td>Invoca Serpent.</td>
+</tr><tr>
+<td><strong>Spawn Gjall</strong><code>vh:spawn_gjall</code></td>
+<td>Invoca Gjall.</td>
+</tr><tr>
+<td><strong>Spawn Seeker</strong><code>vh:spawn_seeker</code></td>
+<td>Invoca Seekers.</td>
+</tr><tr>
+<td><strong>Spawn Seeker Brood</strong><code>vh:spawn_seeker_brood</code></td>
+<td>Invoca Seeker Brood.</td>
+</tr><tr>
+<td><strong>Spawn Seeker Brute</strong><code>vh:spawn_seeker_brute</code></td>
+<td>Invoca Seeker Brute.</td>
+</tr><tr>
+<td><strong>Spawn Tick</strong><code>vh:spawn_tick</code></td>
+<td>Invoca Ticks.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Inimigos - Muito difícil <span>8 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Spawn Bonemaw</strong><code>vh:spawn_bonemaw</code></td>
+<td>Invoca Bonemaw.</td>
+</tr><tr>
+<td><strong>Spawn Charred Marksman</strong><code>vh:spawn_charred_archer</code></td>
+<td>Invoca Charred Marksman.</td>
+</tr><tr>
+<td><strong>Spawn Charred Warlock</strong><code>vh:spawn_charred_mage</code></td>
+<td>Invoca Charred Warlock.</td>
+</tr><tr>
+<td><strong>Spawn Charred Warrior</strong><code>vh:spawn_charred_melee</code></td>
+<td>Invoca Charred Warrior.</td>
+</tr><tr>
+<td><strong>Spawn Charred Twitcher</strong><code>vh:spawn_charred_twitcher</code></td>
+<td>Invoca Charred Twitcher.</td>
+</tr><tr>
+<td><strong>Spawn Fallen Valkyrie</strong><code>vh:spawn_fallen_valkyrie</code></td>
+<td>Invoca Fallen Valkyrie.</td>
+</tr><tr>
+<td><strong>Spawn Morgen NonSleeping</strong><code>vh:spawn_morgen_awake</code></td>
+<td>Invoca Morgen acordado.</td>
+</tr><tr>
+<td><strong>Spawn Volture</strong><code>vh:spawn_volture</code></td>
+<td>Invoca Volture.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Player <span>1 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Heal Player</strong><code>vh:heal_player</code></td>
+<td>Tenta curar o jogador local.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Clima <span>1 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Storm</strong><code>vh:weather_storm</code></td>
+<td>Tenta alterar o clima para tempestade via console.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Controle <span>2 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Clear Enemies</strong><code>vh:clear_enemies</code></td>
+<td>Tenta remover inimigos próximos.</td>
+</tr><tr>
+<td><strong>Limpar Inventário</strong><code>vh:clear_inventory</code></td>
+<td>Remove todos os itens do inventário do jogador.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Ferramentas <span>6 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Give Hammer</strong><code>vh:give_hammer</code></td>
+<td>Entrega martelo.</td>
+</tr><tr>
+<td><strong>Give Hoe</strong><code>vh:give_hoe</code></td>
+<td>Entrega hoe/enxada.</td>
+</tr><tr>
+<td><strong>Give Cultivator</strong><code>vh:give_cultivator</code></td>
+<td>Entrega cultivador.</td>
+</tr><tr>
+<td><strong>Give Iron Pickaxe</strong><code>vh:give_pickaxe_iron</code></td>
+<td>Entrega picareta de ferro.</td>
+</tr><tr>
+<td><strong>Give Iron Axe</strong><code>vh:give_axe_iron</code></td>
+<td>Entrega machado de ferro.</td>
+</tr><tr>
+<td><strong>Give Fishing Rod</strong><code>vh:give_fishing_rod</code></td>
+<td>Entrega vara de pesca.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Armas <span>8 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Give Iron Mace</strong><code>vh:give_iron_mace</code></td>
+<td>Entrega maça de ferro.</td>
+</tr><tr>
+<td><strong>Give Frostner</strong><code>vh:give_frostner</code></td>
+<td>Entrega Frostner.</td>
+</tr><tr>
+<td><strong>Give Iron Sword</strong><code>vh:give_iron_sword</code></td>
+<td>Entrega espada de ferro.</td>
+</tr><tr>
+<td><strong>Give Blackmetal Sword</strong><code>vh:give_blackmetal_sword</code></td>
+<td>Entrega espada de blackmetal.</td>
+</tr><tr>
+<td><strong>Give Mistwalker</strong><code>vh:give_mistwalker</code></td>
+<td>Entrega Mistwalker.</td>
+</tr><tr>
+<td><strong>Give Draugr Fang</strong><code>vh:give_draugr_fang</code></td>
+<td>Entrega arco Draugr Fang.</td>
+</tr><tr>
+<td><strong>Give Spine Snap</strong><code>vh:give_spinesnap</code></td>
+<td>Entrega arco Spine Snap.</td>
+</tr><tr>
+<td><strong>Give Arbalest</strong><code>vh:give_arbalest</code></td>
+<td>Entrega besta Arbalest.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Munição <span>5 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Give Fire Arrows</strong><code>vh:give_arrow_fire</code></td>
+<td>Entrega flechas de fogo.</td>
+</tr><tr>
+<td><strong>Give Poison Arrows</strong><code>vh:give_arrow_poison</code></td>
+<td>Entrega flechas de veneno.</td>
+</tr><tr>
+<td><strong>Give Frost Arrows</strong><code>vh:give_arrow_frost</code></td>
+<td>Entrega flechas de gelo.</td>
+</tr><tr>
+<td><strong>Give Needle Arrows</strong><code>vh:give_arrow_needle</code></td>
+<td>Entrega flechas de agulha.</td>
+</tr><tr>
+<td><strong>Give Blackmetal Bolts</strong><code>vh:give_bolt_blackmetal</code></td>
+<td>Entrega bolts de blackmetal.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Escudos <span>3 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Give Serpent Shield</strong><code>vh:give_serpent_shield</code></td>
+<td>Entrega escudo de serpente.</td>
+</tr><tr>
+<td><strong>Give Blackmetal Shield</strong><code>vh:give_blackmetal_shield</code></td>
+<td>Entrega escudo de blackmetal.</td>
+</tr><tr>
+<td><strong>Give Carapace Shield</strong><code>vh:give_carapace_shield</code></td>
+<td>Entrega escudo de carapaça.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Armaduras <span>12 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Give Root Chest</strong><code>vh:give_root_chest</code></td>
+<td>Entrega peitoral Root.</td>
+</tr><tr>
+<td><strong>Give Root Legs</strong><code>vh:give_root_legs</code></td>
+<td>Entrega pernas Root.</td>
+</tr><tr>
+<td><strong>Give Root Mask</strong><code>vh:give_root_mask</code></td>
+<td>Entrega máscara Root.</td>
+</tr><tr>
+<td><strong>Give Wolf Chest</strong><code>vh:give_wolf_chest</code></td>
+<td>Entrega peitoral de lobo.</td>
+</tr><tr>
+<td><strong>Give Wolf Legs</strong><code>vh:give_wolf_legs</code></td>
+<td>Entrega pernas de lobo.</td>
+</tr><tr>
+<td><strong>Give Drake Helmet</strong><code>vh:give_drake_helmet</code></td>
+<td>Entrega capacete Drake.</td>
+</tr><tr>
+<td><strong>Give Padded Chest</strong><code>vh:give_padded_chest</code></td>
+<td>Entrega peitoral padded.</td>
+</tr><tr>
+<td><strong>Give Padded Legs</strong><code>vh:give_padded_legs</code></td>
+<td>Entrega pernas padded.</td>
+</tr><tr>
+<td><strong>Give Padded Helmet</strong><code>vh:give_padded_helmet</code></td>
+<td>Entrega capacete padded.</td>
+</tr><tr>
+<td><strong>Give Carapace Chest</strong><code>vh:give_carapace_chest</code></td>
+<td>Entrega peitoral carapace.</td>
+</tr><tr>
+<td><strong>Give Carapace Legs</strong><code>vh:give_carapace_legs</code></td>
+<td>Entrega pernas carapace.</td>
+</tr><tr>
+<td><strong>Give Carapace Helmet</strong><code>vh:give_carapace_helmet</code></td>
+<td>Entrega capacete carapace.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Capas <span>2 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Give Feather Cape</strong><code>vh:give_feather_cape</code></td>
+<td>Entrega capa de penas.</td>
+</tr><tr>
+<td><strong>Give Wolf Cape</strong><code>vh:give_wolf_cape</code></td>
+<td>Entrega capa de lobo.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Comida <span>11 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Give Honey</strong><code>vh:give_honey</code></td>
+<td>Entrega mel.</td>
+</tr><tr>
+<td><strong>Give Sausages</strong><code>vh:give_sausages</code></td>
+<td>Entrega sausages.</td>
+</tr><tr>
+<td><strong>Give Serpent Stew</strong><code>vh:give_serpent_stew</code></td>
+<td>Entrega Serpent Stew.</td>
+</tr><tr>
+<td><strong>Give Lox Pie</strong><code>vh:give_lox_pie</code></td>
+<td>Entrega Lox Pie.</td>
+</tr><tr>
+<td><strong>Give Blood Pudding</strong><code>vh:give_blood_pudding</code></td>
+<td>Entrega Blood Pudding.</td>
+</tr><tr>
+<td><strong>Give Fish Wraps</strong><code>vh:give_fish_wraps</code></td>
+<td>Entrega Fish Wraps.</td>
+</tr><tr>
+<td><strong>Give Salad</strong><code>vh:give_salad</code></td>
+<td>Entrega Salad.</td>
+</tr><tr>
+<td><strong>Give Misthare Supreme</strong><code>vh:give_misthare_supreme</code></td>
+<td>Entrega Misthare Supreme.</td>
+</tr><tr>
+<td><strong>Give Honey Glazed Chicken</strong><code>vh:give_honey_glazed_chicken</code></td>
+<td>Entrega Honey Glazed Chicken.</td>
+</tr><tr>
+<td><strong>Give Seeker Aspic</strong><code>vh:give_seeker_aspic</code></td>
+<td>Entrega Seeker Aspic.</td>
+</tr><tr>
+<td><strong>Give Yggdrasil Porridge</strong><code>vh:give_yggdrasil_porridge</code></td>
+<td>Entrega Yggdrasil Porridge.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Poções e Mead <span>6 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Give Medium Healing Mead</strong><code>vh:give_mead_health_medium</code></td>
+<td>Entrega cura média.</td>
+</tr><tr>
+<td><strong>Give Medium Stamina Mead</strong><code>vh:give_mead_stamina_medium</code></td>
+<td>Entrega stamina média.</td>
+</tr><tr>
+<td><strong>Give Poison Resist Mead</strong><code>vh:give_mead_poison_resist</code></td>
+<td>Entrega resistência a veneno.</td>
+</tr><tr>
+<td><strong>Give Frost Resist Mead</strong><code>vh:give_mead_frost_resist</code></td>
+<td>Entrega resistência a gelo.</td>
+</tr><tr>
+<td><strong>Give Fire Resist Mead</strong><code>vh:give_mead_fire_resist</code></td>
+<td>Entrega resistência a fogo.</td>
+</tr><tr>
+<td><strong>Give Medium Eitr Mead</strong><code>vh:give_mead_eitr_medium</code></td>
+<td>Entrega eitr médio.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Outros <span>1 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Spawn Tronco Grande</strong><code>vh:spawn_big_tree_log</code></td>
+<td>Spawna um tronco grande e grosso de árvore perto do jogador.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="command-group">
+<summary>Tempo <span>2 comandos</span></summary>
+<div class="command-table-wrap">
+<table class="command-table">
+<tbody>
+<tr>
+<td><strong>Deixar de Dia</strong><code>vh:time_day</code></td>
+<td>Tenta deixar o Valheim de dia.</td>
+</tr><tr>
+<td><strong>Deixar de Noite</strong><code>vh:time_night</code></td>
+<td>Tenta deixar o Valheim de noite.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+</div>
+</div>
+</details>
+</div>
+<p class="minecraft-note">Nesta etapa foram documentados os jogos com arquivos enviados: GTA V Legacy, Sons Of The Forest, Green Hell e Valheim. O próximo jogo pode ser adicionado depois no mesmo padrão.</p>
 </section>
 <section class="section split" id="demo">
 <div>

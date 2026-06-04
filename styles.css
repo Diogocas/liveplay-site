@@ -1763,3 +1763,124 @@ img { max-width: 100%; }
     width: 250px;
   }
 }
+
+
+/* Other game command documentation */
+.game-click-card {
+  display: block;
+  cursor: pointer;
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.game-click-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(107,111,255,.45);
+  box-shadow: 0 28px 80px rgba(0,0,0,.34), 0 0 42px rgba(107,111,255,.12);
+}
+.game-docs-section {
+  position: relative;
+  scroll-margin-top: 92px;
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+.game-docs-head {
+  max-width: 980px;
+}
+.game-doc-nav {
+  max-width: 1180px;
+  margin: 0 auto 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.game-doc-nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.10);
+  color: #dbeafe;
+  background: rgba(255,255,255,.055);
+  font-weight: 950;
+  font-size: 13px;
+  transition: transform .18s ease, border-color .18s ease, background .18s ease;
+}
+.game-doc-nav a:hover {
+  transform: translateY(-2px);
+  border-color: rgba(57,230,182,.34);
+  background: rgba(57,230,182,.09);
+}
+.game-doc-list {
+  margin-top: 14px;
+}
+.game-command-detail {
+  scroll-margin-top: 92px;
+}
+.game-doc-hero {
+  margin: 18px 0 16px;
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 18px;
+  align-items: stretch;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 24px;
+  padding: 18px;
+  background:
+    radial-gradient(circle at 8% 0%, rgba(57,230,182,.11), transparent 35%),
+    radial-gradient(circle at 92% 85%, rgba(107,111,255,.16), transparent 38%),
+    rgba(2,6,23,.20);
+}
+.game-doc-hero h3 {
+  margin: 10px 0;
+  font-size: clamp(24px, 2.6vw, 36px);
+}
+.game-doc-hero p {
+  margin-bottom: 14px;
+}
+.game-doc-hero img {
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(2,6,23,.35);
+}
+.game-doc-info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+.game-doc-info-grid article {
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 18px;
+  background: rgba(255,255,255,.035);
+  padding: 14px;
+}
+.game-doc-info-grid strong {
+  display: block;
+  color: #dbeafe;
+  margin-bottom: 7px;
+}
+.game-doc-info-grid p {
+  margin: 0;
+  line-height: 1.55;
+}
+.game-doc-info-grid code {
+  display: inline-flex;
+  padding: 6px 8px;
+  border-radius: 10px;
+  color: #c7fff0;
+  background: rgba(2,6,23,.58);
+  border: 1px solid rgba(255,255,255,.08);
+}
+@media (max-width: 980px) {
+  .game-doc-hero,
+  .game-doc-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
