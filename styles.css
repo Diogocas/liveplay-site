@@ -1498,7 +1498,7 @@ img { max-width: 100%; }
     radial-gradient(circle at 95% 0%, rgba(107,111,255,.12), transparent 32%),
     rgba(17,24,39,.78);
 }
-.minecraft-plugin-detail summary {
+.minecraft-plugin-detail > summary {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1506,10 +1506,10 @@ img { max-width: 100%; }
   padding: 20px 22px;
   list-style: none;
 }
-.minecraft-plugin-detail summary::-webkit-details-marker {
+.minecraft-plugin-detail > summary::-webkit-details-marker {
   display: none;
 }
-.minecraft-plugin-detail summary::after {
+.minecraft-plugin-detail > summary::after {
   content: "+";
   width: 34px;
   height: 34px;
@@ -1522,18 +1522,18 @@ img { max-width: 100%; }
   font-size: 24px;
   line-height: 1;
 }
-.minecraft-plugin-detail[open] summary::after {
+.minecraft-plugin-detail[open] > summary::after {
   content: "–";
 }
-.minecraft-plugin-detail summary span:first-child {
+.minecraft-plugin-detail > summary span:first-child {
   display: grid;
   gap: 5px;
 }
-.minecraft-plugin-detail summary strong {
+.minecraft-plugin-detail > summary strong {
   font-size: 22px;
   letter-spacing: -.03em;
 }
-.minecraft-plugin-detail summary small,
+.minecraft-plugin-detail > summary small,
 .plugin-meta em {
   color: var(--muted);
   font-size: 13px;
@@ -1619,7 +1619,7 @@ img { max-width: 100%; }
   .plugin-columns {
     grid-template-columns: 1fr;
   }
-  .minecraft-plugin-detail summary {
+  .minecraft-plugin-detail > summary {
     align-items: flex-start;
     flex-direction: column;
   }
@@ -1689,6 +1689,23 @@ img { max-width: 100%; }
 }
 .command-group summary::-webkit-details-marker {
   display: none;
+}
+.command-group > summary::after {
+  content: "+";
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255,255,255,.08);
+  color: #dbeafe;
+  font-size: 24px;
+  line-height: 1;
+  margin-left: auto;
+}
+.command-group[open] > summary::after {
+  content: "–";
 }
 .command-group summary span {
   color: var(--muted);
