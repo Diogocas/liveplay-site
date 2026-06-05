@@ -1,6 +1,7 @@
 const LIVEPLAY_CONFIG = {
   DOWNLOAD_URL: "#",
-  API_BASE: "https://liveplay-backend.onrender.com"
+  API_BASE: "https://liveplay-backend.onrender.com",
+  RELEASE_LOCKED: true
 };
 
 const $ = (selector) => document.querySelector(selector);
@@ -28,7 +29,19 @@ function resetFallbackLink() {
   checkoutFallbackLink.href = "#";
 }
 
+function showComingSoon(type = "download") {
+  const message = type === "pro"
+    ? "Assinatura em breve. O LivePlay está em fase final de testes."
+    : "Download em breve. O LivePlay está em fase final de testes.";
+  alert(message);
+}
+
 function openProModal() {
+  if (LIVEPLAY_CONFIG.RELEASE_LOCKED) {
+    showComingSoon("pro");
+    return;
+  }
+
   if (!proModal) return;
   lastFocusedElement = document.activeElement;
   proModal.hidden = false;
@@ -67,20 +80,27 @@ async function createCheckout(email) {
 $$("[data-pro-checkout]").forEach((button) => {
   button.addEventListener("click", (event) => {
     event.preventDefault();
-    alert("Assinatura PRO em breve. O LivePlay ainda está em fase de testes privados.");
+    showComingSoon("pro");
   });
 });
 
 $$("[data-coming-soon]").forEach((button) => {
   button.addEventListener("click", (event) => {
     event.preventDefault();
-    const type = button.getAttribute("data-coming-soon");
-    alert(type === "pro" ? "Assinatura PRO em breve." : "Download em breve. O LivePlay ainda está em fase de testes privados.");
+    const type = button.getAttribute("data-coming-soon") || "download";
+    showComingSoon(type);
   });
 });
 
 checkoutForm?.addEventListener("submit", async (event) => {
   event.preventDefault();
+
+  if (LIVEPLAY_CONFIG.RELEASE_LOCKED) {
+    setMessage("Assinatura em breve. O checkout será ativado quando os testes finais terminarem.", "error");
+    showComingSoon("pro");
+    return;
+  }
+
   resetFallbackLink();
 
   const email = String(checkoutEmail?.value || "").trim().toLowerCase();
@@ -143,5 +163,11 @@ document.addEventListener("keydown", (event) => {
 
 downloadButton?.addEventListener("click", (event) => {
   event.preventDefault();
-  alert("Download em breve. O LivePlay ainda está em fase de testes privados.");
+
+  if (LIVEPLAY_CONFIG.RELEASE_LOCKED || !LIVEPLAY_CONFIG.DOWNLOAD_URL || LIVEPLAY_CONFIG.DOWNLOAD_URL === "#") {
+    showComingSoon("download");
+    return;
+  }
+
+  window.location.href = LIVEPLAY_CONFIG.DOWNLOAD_URL;
 });

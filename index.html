@@ -31,8 +31,8 @@
 <a href="#faq">FAQ</a>
 </nav>
 <div class="header-actions">
-<a class="btn ghost" data-coming-soon="download" href="#download">Download em breve</a>
-<a class="btn primary" data-coming-soon="pro" href="#planos">PRO em breve</a>
+<a class="btn ghost is-coming-soon" data-coming-soon="download" aria-disabled="true" href="#download">Download em breve</a>
+<a class="btn primary is-coming-soon" data-coming-soon="pro" aria-disabled="true" href="#planos">Assinar em breve</a>
 </div>
 </header>
 <main id="top">
@@ -45,7 +45,7 @@
           overlays, alertas, ranks, roletas, Jarro da Live, vídeos e automações dentro de Minecraft, Grand Theft Auto V Legacy, Sons Of The Forest, Green Hell, Valheim e Only Climb.
         </p>
 <div class="hero-actions">
-<a class="btn primary big" data-coming-soon="download" href="#download">Download em breve</a><a class="btn glass big" data-coming-soon="pro" href="#planos">PRO em breve</a>
+<a class="btn primary big is-coming-soon" data-coming-soon="download" aria-disabled="true" href="#download">Download em breve</a><a class="btn glass big is-coming-soon" data-coming-soon="pro" aria-disabled="true" href="#planos">Assinar em breve</a>
 <a class="btn glass big" href="#demo">Ver demonstração</a>
 </div>
 <div class="trust-row">
@@ -2639,8 +2639,8 @@
 <section class="section" id="planos">
 <div class="section-head">
 <div class="eyebrow">Planos</div>
-<h2>Download e PRO em breve.</h2>
-<p>O LivePlay ainda está em fase de testes privados. Download e assinatura serão liberados em breve.</p>
+<h2>Download e assinatura em breve.</h2>
+<p>O LivePlay está em fase final de testes. O download oficial e a assinatura serão liberados em breve.</p>
 </div>
 <div class="pricing-grid">
 <article class="price-card">
@@ -2655,13 +2655,13 @@
 <li>1 servidor</li>
 <li>Backup manual</li>
 </ul>
-<a class="btn ghost full" data-coming-soon="download" href="#download">Download em breve</a>
+<a class="btn ghost full is-coming-soon" data-coming-soon="download" aria-disabled="true" href="#download">Download em breve</a>
 </article>
 <article class="price-card pro" id="assinar-pro">
 <div class="price-badge">PRO</div>
 <h3>Para lives profissionais</h3>
 <div class="price">R$ 59,90<span>/mês</span></div>
-<p>A assinatura PRO será liberada em breve após a fase de testes.</p>
+<p>A assinatura será liberada em breve após a fase final de testes.</p>
 <ul>
 <li>Overlays premium</li>
 <li>Spotify, Roleta e Desafios</li>
@@ -2670,7 +2670,7 @@
 <li>Plugins automáticos</li>
 <li>Mais limites e recursos</li>
 </ul>
-<a class="btn primary full" data-coming-soon="pro" href="#planos">PRO em breve</a>
+<a class="btn primary full is-coming-soon" data-coming-soon="pro" aria-disabled="true" href="#planos">Assinar em breve</a>
 </article>
 </div>
 <div aria-label="Como funciona a assinatura PRO" class="checkout-flow">
@@ -2805,11 +2805,12 @@
 <div>
 <div class="eyebrow">Download oficial</div>
 <h2>LivePlay estará disponível em breve</h2>
-<p>Instale no Windows, faça login e conecte sua live TikTok. O download e a assinatura PRO serão liberados em breve.</p>
+<p>O LivePlay está em fase final de testes. Em breve o download oficial para Windows e a assinatura serão liberados.</p>
 </div>
+<p class="release-note">Estamos finalizando os últimos testes antes de liberar o download público.</p>
 <div class="download-actions">
-<a class="btn primary big" data-coming-soon="download" href="#" id="downloadButton">Download em breve</a>
-<a class="btn glass big" data-coming-soon="pro" href="#planos">PRO em breve</a>
+<a class="btn primary big is-coming-soon" data-coming-soon="download" aria-disabled="true" href="#" id="downloadButton">Download em breve</a>
+<a class="btn glass big is-coming-soon" data-coming-soon="pro" aria-disabled="true" href="#planos">Assinar em breve</a>
 </div>
 </section>
 </main>
@@ -2817,17 +2818,17 @@
 <div aria-labelledby="proModalTitle" aria-modal="true" class="modal-card" role="dialog">
 <button aria-label="Fechar" class="modal-close" data-close-pro-modal="" type="button">×</button>
 <div class="eyebrow">Assinatura PRO</div>
-<h2 id="proModalTitle">PRO em breve</h2>
-<p class="modal-lead">A assinatura PRO ainda não está disponível pelo site. Ela será liberada em breve.</p>
+<h2 id="proModalTitle">Assinatura em breve</h2>
+<p class="modal-lead">A assinatura ainda não está disponível pelo site. Ela será liberada em breve após os testes finais.</p>
 <form class="checkout-form" id="proCheckoutForm" novalidate="">
 <label for="checkoutEmail">
 <span>Email da conta LivePlay</span>
 <input autocomplete="email" id="checkoutEmail" inputmode="email" name="email" placeholder="seu@email.com" required="" type="email"/>
 </label>
-<button class="btn primary full" id="checkoutSubmit" type="submit">PRO em breve</button>
+<button class="btn primary full" id="checkoutSubmit" type="submit" disabled>Assinar em breve</button>
 </form>
 <p aria-live="polite" class="checkout-message" id="checkoutMessage" role="status"></p><a class="checkout-fallback-link" hidden="" href="#" id="checkoutFallbackLink" rel="noopener noreferrer" target="_blank">Abrir checkout manualmente</a>
-<small class="modal-note">O checkout será ativado somente quando a assinatura pública for liberada.</small>
+<small class="modal-note">Os campos do checkout ficam preservados no site, mas só serão ativados quando a assinatura pública for liberada.</small>
 </div>
 </div>
 <noscript>
