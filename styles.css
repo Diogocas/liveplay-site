@@ -501,6 +501,16 @@ details p { margin: 12px 0 0; }
   border: 1px solid rgba(255,255,255,0.12);
   box-shadow: 0 18px 40px rgba(0,0,0,0.26);
 }
+.feature-game-icon-img {
+  width: 112px;
+  height: 112px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 999px;
+  margin: 0 auto 18px;
+  padding: 8px;
+  background: radial-gradient(circle, rgba(57,230,182,.12), rgba(2,6,23,.35));
+}
 
 /* Compatibility pills with real icons */
 .compat-grid {
@@ -1448,7 +1458,7 @@ img { max-width: 100%; }
 .minecraft-template-grid article {
   border: 1px solid rgba(255,255,255,.10);
   border-radius: 22px;
-  padding: 16px;
+  padding: 8px;
   background: linear-gradient(180deg, rgba(18,23,45,.76), rgba(8,12,28,.90));
   box-shadow: 0 14px 42px rgba(0,0,0,.20);
 }
@@ -1765,6 +1775,33 @@ img { max-width: 100%; }
 }
 
 
+
+/* Minecraft integrated with game documentation list */
+.minecraft-game-card .feature-game-icon-img {
+  box-shadow: 0 18px 44px rgba(57,230,182,.14), 0 16px 34px rgba(0,0,0,.28);
+}
+.minecraft-game-detail {
+  border-color: rgba(57,230,182,.20);
+}
+.minecraft-game-hero .minecraft-detail-icon {
+  object-fit: contain;
+  padding: 18px;
+  background:
+    radial-gradient(circle at 50% 45%, rgba(57,230,182,.12), transparent 54%),
+    rgba(2,6,23,.35);
+}
+.minecraft-game-detail .minecraft-template-grid {
+  margin-top: 16px;
+}
+.minecraft-subplugin-list {
+  margin-top: 16px;
+}
+.minecraft-subplugin-list .minecraft-plugin-detail {
+  background:
+    radial-gradient(circle at 95% 0%, rgba(57,230,182,.08), transparent 32%),
+    rgba(15,23,42,.70);
+}
+
 /* Other game command documentation */
 .game-click-card {
   display: block;
@@ -1859,7 +1896,7 @@ img { max-width: 100%; }
   border: 1px solid rgba(255,255,255,.09);
   border-radius: 18px;
   background: rgba(255,255,255,.035);
-  padding: 14px;
+  padding: 8px;
 }
 .game-doc-info-grid strong {
   display: block;
@@ -1883,4 +1920,18 @@ img { max-width: 100%; }
   .game-doc-info-grid {
     grid-template-columns: 1fr;
   }
+}
+
+
+/* Minecraft icon card polish */
+.minecraft-pixel-card-icon,
+.minecraft-detail-icon {
+  object-fit: contain;
+  padding: 8px;
+  background:
+    radial-gradient(circle at 50% 45%, rgba(57,230,182,.14), transparent 54%),
+    rgba(2,6,23,.42);
+}
+.minecraft-game-card .minecraft-pixel-card-icon {
+  padding: 8px;
 }

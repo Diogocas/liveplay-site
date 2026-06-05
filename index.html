@@ -31,8 +31,8 @@
 <a href="#faq">FAQ</a>
 </nav>
 <div class="header-actions">
-<a class="btn ghost" href="#download" data-coming-soon="download">Download em breve</a>
-<a class="btn primary" href="#planos" data-coming-soon="pro">PRO em breve</a>
+<a class="btn ghost" data-coming-soon="download" href="#download">Download em breve</a>
+<a class="btn primary" data-coming-soon="pro" href="#planos">PRO em breve</a>
 </div>
 </header>
 <main id="top">
@@ -45,7 +45,7 @@
           overlays, alertas, ranks, roletas, Jarro da Live, vídeos e automações dentro de Minecraft, Grand Theft Auto V Legacy, Sons Of The Forest, Green Hell, Valheim e Only Climb.
         </p>
 <div class="hero-actions">
-<a class="btn primary big" href="#download" data-coming-soon="download">Download em breve</a><a class="btn glass big" href="#planos" data-coming-soon="pro">PRO em breve</a>
+<a class="btn primary big" data-coming-soon="download" href="#download">Download em breve</a><a class="btn glass big" data-coming-soon="pro" href="#planos">PRO em breve</a>
 <a class="btn glass big" href="#demo">Ver demonstração</a>
 </div>
 <div class="trust-row">
@@ -92,11 +92,11 @@
 <h3>Overlays profissionais</h3>
 <p>Links públicos para OBS e TikTok Live Studio com alertas, ranks, vídeos, Jarro da Live e efeitos visuais.</p>
 </article>
-<a aria-label="Ver plugins e templates do Minecraft no LivePlay" class="feature-card game-feature minecraft-click-card" href="#minecraft-plugins">
-<img alt="Minecraft Java Edition" class="feature-game-img" decoding="async" height="720" loading="lazy" src="./assets/images/minecraft.webp" width="720"/>
+<a aria-label="Ver plugins, templates e comandos do Minecraft no LivePlay" class="feature-card game-feature game-click-card minecraft-game-card" href="#minecraft-details">
+<img alt="Ícone do Minecraft" class="feature-game-img feature-game-icon-img minecraft-pixel-card-icon" decoding="async" height="720" loading="lazy" src="./assets/images/minecraft.webp" width="720"/>
 <h3>Minecraft</h3>
-<p>Comandos, mobs, servidores, plugins e automações para transformar a live em gameplay interativo.</p>
-<span class="minecraft-card-cta">Ver plugins e templates →</span>
+<p>Plugins oficiais, templates, mobs, TNT, servidores e comandos completos para live interativa.</p>
+<span class="minecraft-card-cta">Ver comandos completos →</span>
 </a>
 <a aria-label="Ver comandos e template do Grand Theft Auto V Legacy no LivePlay" class="feature-card game-feature game-click-card" href="#gta5-details">
 <img alt="Grand Theft Auto V" class="feature-game-img" decoding="async" height="720" loading="lazy" src="./assets/images/gta.webp" width="720"/>
@@ -116,21 +116,18 @@
 <p>Integração via BepInEx para acionar animais, comandos de sobrevivência e eventos na selva durante a live.</p>
 <span class="minecraft-card-cta">Ver comandos completos →</span>
 </a>
-
 <a aria-label="Ver comandos e template do Valheim no LivePlay" class="feature-card game-feature game-click-card" href="#valheim-details">
 <img alt="Valheim" class="feature-game-img" decoding="async" height="1024" loading="lazy" src="./assets/images/valheim-logo.webp" width="1024"/>
 <h3>Valheim</h3>
 <p>Bosses, criaturas, raids e sobrevivência em tempo real durante a live.</p>
 <span class="minecraft-card-cta">Ver comandos completos →</span>
 </a>
-
 <a aria-label="Ver comandos e template do Only Climb no LivePlay" class="feature-card game-feature game-click-card" href="#only-climb-details">
 <img alt="Only Climb Better Together" class="feature-game-img" decoding="async" height="1254" loading="lazy" src="./assets/images/only-climb.webp" width="1254"/>
 <h3>Only Climb</h3>
 <p>Comandos de pulo, teleporte, turbo, física e trollagens para transformar a escalada em desafio interativo.</p>
 <span class="minecraft-card-cta">Ver comandos completos →</span>
 </a>
-
 <article class="feature-card">
 <div class="icon">🏆</div>
 <h3>Ranks e engajamento</h3>
@@ -146,21 +143,31 @@
 <h3>Conta e cloud</h3>
 <p>Login, PRO/FREE, backup na nuvem, restauração e proteção para usar o LivePlay com segurança.</p>
 </article>
-
-
-
 </div>
 </section>
-<section class="section minecraft-plugin-section" id="minecraft-plugins">
-<div class="section-head minecraft-section-head">
-<div class="eyebrow">Minecraft no LivePlay</div>
-<h2>Plugins, templates e modos oficiais do Minecraft</h2>
-<p>Clique no card do Minecraft e veja todos os plugins oficiais, planos, versões e a lista completa de comandos explicada para configurar seus modelos no LivePlay.</p>
+<section class="section game-docs-section" id="game-templates">
+<div class="section-head game-docs-head">
+<div class="eyebrow">Templates dos jogos</div>
+<h2>Comandos completos dos jogos integrados</h2>
+<p>Clique no jogo e veja o template oficial, como ele se conecta ao LivePlay e todos os comandos disponíveis separados por categoria.</p>
 </div>
-<div class="minecraft-hero-card">
-<div class="minecraft-hero-copy">
-<span class="minecraft-kicker">Como funciona</span>
-<h3>O público controla o servidor em tempo real</h3>
+<div aria-label="Atalhos dos jogos com documentação completa" class="game-doc-nav">
+<a href="#minecraft-details">Minecraft</a><a href="#gta5-details">Grand Theft Auto V Legacy</a><a href="#sons-forest-details">Sons Of The Forest</a><a href="#green-hell-details">Green Hell</a><a href="#valheim-details">Valheim</a><a href="#only-climb-details">Only Climb</a>
+</div>
+<div class="minecraft-plugin-list game-doc-list">
+<details class="minecraft-plugin-detail command-plugin-detail game-command-detail minecraft-game-detail" id="minecraft-details" open="">
+<summary>
+<span>
+<strong>Minecraft</strong>
+<small>Plugins oficiais, templates prontos, servidores, mobs, TNT, baús, kits, armadilhas, minigames e comandos completos para live interativa.</small>
+</span>
+<span class="plugin-meta"><em>5 plugins / templates oficiais</em></span>
+</summary>
+<div class="plugin-body">
+<div class="game-doc-hero minecraft-game-hero">
+<div>
+<span class="minecraft-kicker">Minecraft no LivePlay</span>
+<h3>Plugins, templates e modos oficiais do Minecraft</h3>
 <p>Presentes, likes, follows, shares e comandos manuais podem acionar mobs, TNT, baús, kits, armadilhas, borda, caixa de bedrock, ondas e minigames usando os plugins oficiais do LivePlay.</p>
 <div class="minecraft-flow">
 <span>TikTok Live</span>
@@ -172,9 +179,9 @@
 <span>Ação no jogo</span>
 </div>
 </div>
-<img alt="Minecraft com LivePlay" decoding="async" height="661" loading="lazy" src="./assets/images/minecraft-live.webp" width="1200"/>
+<img alt="Ícone do Minecraft" class="minecraft-detail-icon" decoding="async" height="720" loading="lazy" src="./assets/images/minecraft.webp" width="720"/>
 </div>
-<div class="minecraft-template-grid" aria-label="Templates oficiais do Minecraft">
+<div aria-label="Templates oficiais do Minecraft" class="minecraft-template-grid">
 <article>
 <span class="plan-pill pro-pill">PRO</span>
 <strong>Survival Caótico</strong>
@@ -201,8 +208,8 @@
 <p>Template de evento por ondas com mobs nomeados pela live e progressão até a onda final.</p>
 </article>
 </div>
-<div class="minecraft-plugin-list">
-<details open class="minecraft-plugin-detail command-plugin-detail">
+<div aria-label="Plugins oficiais do Minecraft" class="minecraft-plugin-list minecraft-subplugin-list">
+<details class="minecraft-plugin-detail command-plugin-detail" open="">
 <summary>
 <span>
 <strong>LivePlay Survival</strong>
@@ -216,11 +223,9 @@
 <strong>Comando base</strong>
 <code>/survival &lt;ação&gt;</code>
 </div>
-
 <div class="command-groups">
-<details class="command-group" open>
+<details class="command-group" open="">
 <summary>Itens, kits e ajuda <span>13 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/survival apple_enchanted &lt;name&gt;</code></td><td>Dá ao jogador uma maçã dourada encantada.</td></tr>
 <tr><td><code>/survival bow &lt;name&gt;</code></td><td>Entrega um arco com encantamento Infinidade.</td></tr>
@@ -239,7 +244,6 @@
 </details>
 <details class="command-group">
 <summary>Mobs e bosses <span>23 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/survival creeper &lt;name&gt;</code></td><td>Invoca um creeper perseguindo o jogador.</td></tr>
 <tr><td><code>/survival creeper_charged &lt;name&gt;</code></td><td>Invoca um creeper eletrificado perseguindo o jogador.</td></tr>
@@ -268,7 +272,6 @@
 </details>
 <details class="command-group">
 <summary>Armadilhas e caos <span>13 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/survival pit &lt;width&gt; &lt;height&gt; &lt;name&gt;</code></td><td>Cria um buraco embaixo do jogador.</td></tr>
 <tr><td><code>/survival trap &lt;name&gt;</code></td><td>Prende o jogador em uma estrutura 4x4 de teias.</td></tr>
@@ -287,7 +290,6 @@
 </details>
 <details class="command-group">
 <summary>Efeitos no jogador <span>5 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/survival speed &lt;seconds&gt;</code></td><td>Aumenta a velocidade do jogador pelo tempo informado.</td></tr>
 <tr><td><code>/survival jump_boost &lt;seconds&gt;</code></td><td>Aumenta a altura do salto pelo tempo informado.</td></tr>
@@ -298,7 +300,6 @@
 </details>
 <details class="command-group">
 <summary>Meta, HUD e controle <span>4 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/survival start &lt;timer/zombie/sheep&gt; &lt;minutes/count&gt;</code></td><td>Inicia uma meta do plugin, como timer, zumbis ou ovelhas.</td></tr>
 <tr><td><code>/survival stop</code></td><td>Para as metas ativas.</td></tr>
@@ -332,9 +333,8 @@
 </ul>
 </div>
 <div class="command-groups">
-<details class="command-group" open>
+<details class="command-group" open="">
 <summary>Comandos principais da arena <span>15 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/tesouro create</code></td><td>Cria a arena do zero e inicia o minigame. Também aceita /tesouro criar.</td></tr>
 <tr><td><code>/tesouro criar</code></td><td>Alias em português para criar a Treasure Arena.</td></tr>
@@ -355,7 +355,6 @@
 </details>
 <details class="command-group">
 <summary>Baús e tesouros <span>8 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/tesouro chest {nickname}</code></td><td>Cria um baú comum com loot aleatório da fase atual.</td></tr>
 <tr><td><code>/tesouro rarechest {nickname}</code></td><td>Cria um baú raro com chance de loot mais forte.</td></tr>
@@ -369,7 +368,6 @@
 </details>
 <details class="command-group">
 <summary>Eventos e suporte <span>8 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/tesouro trap {nickname}</code></td><td>Ativa uma armadilha na arena.</td></tr>
 <tr><td><code>/tesouro armadilha {nickname}</code></td><td>Alias em português para trap.</td></tr>
@@ -383,7 +381,6 @@
 </details>
 <details class="command-group">
 <summary>Kits e itens <span>10 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/tesouro diamondset {nickname}</code></td><td>Entrega armadura completa de diamante, espada de diamante e 5 maçãs douradas encantadas.</td></tr>
 <tr><td><code>/tesouro setdiamante {nickname}</code></td><td>Alias em português para diamondset.</td></tr>
@@ -399,7 +396,6 @@
 </details>
 <details class="command-group">
 <summary>Mobs básicos <span>6 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/tesouro zombie {nickname}</code></td><td>Cria um zumbi na arena com nome opcional da pessoa da live.</td></tr>
 <tr><td><code>/tesouro skeleton {nickname}</code></td><td>Cria um esqueleto na arena.</td></tr>
@@ -411,7 +407,6 @@
 </details>
 <details class="command-group">
 <summary>Mobs guardiões de fase <span>8 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/tesouro husk {nickname}</code></td><td>Cria um Husk, guardião relacionado à fase de deserto.</td></tr>
 <tr><td><code>/tesouro stray {nickname}</code></td><td>Cria um Stray, guardião relacionado à fase de gelo.</td></tr>
@@ -425,7 +420,6 @@
 </details>
 <details class="command-group">
 <summary>Mobs extras <span>4 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/tesouro zombified_piglin {nickname}</code></td><td>Cria um Zombified Piglin.</td></tr>
 <tr><td><code>/tesouro hoglin {nickname}</code></td><td>Cria um Hoglin e tenta impedir que vire Zoglin.</td></tr>
@@ -435,7 +429,6 @@
 </details>
 <details class="command-group">
 <summary>Mobs aliados <span>3 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/tesouro golem {nickname}</code></td><td>Cria um Iron Golem aliado que ajuda o jogador na arena.</td></tr>
 <tr><td><code>/tesouro dog {nickname}</code></td><td>Cria um cachorro domesticado para seguir e ajudar o jogador em combate.</td></tr>
@@ -480,9 +473,8 @@
 </ul>
 </div>
 <div class="command-groups">
-<details class="command-group" open>
+<details class="command-group" open="">
 <summary>Comandos principais <span>7 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/surtosolar start</code></td><td>Inicia o evento Surto Solar com nomes padrão nos mobs.</td></tr>
 <tr><td><code>/surtosolar start &lt;nickname&gt;</code></td><td>Inicia o evento com o nome da pessoa nos mobs; se já estiver ativo, adiciona reforço na onda atual.</td></tr>
@@ -495,7 +487,6 @@
 </details>
 <details class="command-group">
 <summary>Mob direto e alias <span>4 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/surtosolar</code></td><td>Cria um mob do Surto Solar sem nome em cima.</td></tr>
 <tr><td><code>/surtosolar &lt;nickname&gt;</code></td><td>Cria um mob com o nome da pessoa em cima da cabeça.</td></tr>
@@ -519,11 +510,9 @@
 <strong>Comando base</strong>
 <code>/bedrock &lt;ação&gt;</code>
 </div>
-
 <div class="command-groups">
-<details class="command-group" open>
+<details class="command-group" open="">
 <summary>Comandos principais <span>6 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/bedrock create</code></td><td>Cria uma caixa de Bedrock e inicia o timer quando ela estiver cheia.</td></tr>
 <tr><td><code>/bedrock create &lt;tamanho&gt; &lt;altura&gt;</code></td><td>Cria uma caixa personalizada. Tamanho mínimo 3 e altura permitida de 9 a 21.</td></tr>
@@ -535,7 +524,6 @@
 </details>
 <details class="command-group">
 <summary>Preenchimento e limpeza <span>5 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/bedrock fill</code></td><td>Preenche a caixa com blocos.</td></tr>
 <tr><td><code>/bedrock fill &lt;linhas&gt;</code></td><td>Preenche a caixa por quantidade de linhas.</td></tr>
@@ -546,7 +534,6 @@
 </details>
 <details class="command-group">
 <summary>Material da caixa <span>3 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/bedrock glass</code></td><td>Troca paredes e chão da caixa por vidro.</td></tr>
 <tr><td><code>/bedrock wood</code></td><td>Troca paredes e chão da caixa por madeira.</td></tr>
@@ -555,7 +542,6 @@
 </details>
 <details class="command-group">
 <summary>TNT e eventos <span>4 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/bedrock tnt [nome]</code></td><td>Invoca TNT acima da caixa com nome opcional.</td></tr>
 <tr><td><code>/bedrock randomtnt</code></td><td>Invoca TNT com força aleatória.</td></tr>
@@ -565,7 +551,6 @@
 </details>
 <details class="command-group">
 <summary>Configuração e proteção <span>11 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/bedrock edit</code></td><td>Ativa ou desativa a proteção dos blocos da caixa.</td></tr>
 <tr><td><code>/bedrock autoreplace</code></td><td>Ativa ou desativa o preenchimento com qualquer bloco.</td></tr>
@@ -596,11 +581,9 @@
 <strong>Comando base</strong>
 <code>/border &lt;ação&gt;</code>
 </div>
-
 <div class="command-groups">
-<details class="command-group" open>
+<details class="command-group" open="">
 <summary>Comandos principais <span>6 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/border create [tamanho] [meta]</code></td><td>Cria uma borda. Se não informar tamanho/meta, usa o padrão do plugin.</td></tr>
 <tr><td><code>/border start</code></td><td>Retoma ou inicia a borda pausada.</td></tr>
@@ -612,7 +595,6 @@
 </details>
 <details class="command-group">
 <summary>Tamanho da borda <span>2 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/border expand [quantidade]</code></td><td>Expande a borda pela quantidade informada.</td></tr>
 <tr><td><code>/border shrink [quantidade]</code></td><td>Reduz a borda pela quantidade informada.</td></tr>
@@ -620,7 +602,6 @@
 </details>
 <details class="command-group">
 <summary>TNT e baú <span>2 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/border tnt [nick] [quantidade] [segundos] [força]</code></td><td>Gera TNT na borda/evento da borda, podendo usar nick da live.</td></tr>
 <tr><td><code>/border chest</code></td><td>Gera um baú de recompensa.</td></tr>
@@ -628,7 +609,6 @@
 </details>
 <details class="command-group">
 <summary>Proteção <span>2 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/border addspawnprotection &lt;raio&gt;</code></td><td>Define o raio de proteção do spawn.</td></tr>
 <tr><td><code>/border removespawnprotection</code></td><td>Remove ou desativa a proteção do spawn.</td></tr>
@@ -636,7 +616,6 @@
 </details>
 <details class="command-group">
 <summary>Extras interativos <span>9 comandos</span></summary>
-
 <div class="command-table-wrap"><table class="command-table"><tbody>
 <tr><td><code>/border zombie &lt;nickname&gt;</code></td><td>Invoca zumbi com nome opcional.</td></tr>
 <tr><td><code>/border skeleton &lt;nickname&gt;</code></td><td>Invoca esqueleto com nome opcional.</td></tr>
@@ -653,18 +632,9 @@
 </div>
 </details></div>
 <p class="minecraft-note">Quando um plugin possui versão 1.21 e 1.20.1, a descrição aparece uma vez só, porque as duas versões fazem a mesma função dentro do LivePlay. Os comandos com <code>{nickname}</code> ou <code>{username}</code> são ideais para eventos da TikTok Live, porque colocam o nome da pessoa no mob, mensagem ou ação.</p>
-</section>
-<section class="section game-docs-section" id="game-templates">
-<div class="section-head game-docs-head">
-<div class="eyebrow">Templates dos outros jogos</div>
-<h2>Comandos completos dos jogos integrados</h2>
-<p>Clique no jogo e veja o template oficial, como ele se conecta ao LivePlay e todos os comandos disponíveis separados por categoria.</p>
 </div>
-<div class="game-doc-nav" aria-label="Atalhos dos jogos com documentação completa">
-<a href="#gta5-details">Grand Theft Auto V Legacy</a><a href="#sons-forest-details">Sons Of The Forest</a><a href="#green-hell-details">Green Hell</a><a href="#valheim-details">Valheim</a><a href="#only-climb-details">Only Climb</a>
-</div>
-<div class="minecraft-plugin-list game-doc-list">
-<details class="minecraft-plugin-detail command-plugin-detail game-command-detail" id="gta5-details" open>
+</details>
+<details class="minecraft-plugin-detail command-plugin-detail game-command-detail" id="gta5-details" open="">
 <summary>
 <span>
 <strong>Grand Theft Auto V Legacy</strong>
@@ -691,10 +661,7 @@
 <strong>Bridge</strong>
 <p>ScriptHookVDotNet / bridge local LivePlay</p>
 </article>
-<article>
-<strong>Porta local</strong>
-<p><code>35951</code></p>
-</article>
+
 <article>
 <strong>Comandos</strong>
 <p>96 comandos organizados em 9 categorias.</p>
@@ -1114,10 +1081,7 @@
 <strong>Bridge</strong>
 <p>BepInEx IL2CPP / bridge local LivePlay</p>
 </article>
-<article>
-<strong>Porta local</strong>
-<p><code>35952</code></p>
-</article>
+
 <article>
 <strong>Comandos</strong>
 <p>72 comandos organizados em 9 categorias.</p>
@@ -1465,10 +1429,7 @@
 <strong>Bridge</strong>
 <p>BepInEx / bridge local LivePlay</p>
 </article>
-<article>
-<strong>Porta local</strong>
-<p><code>35953</code></p>
-</article>
+
 <article>
 <strong>Comandos</strong>
 <p>33 comandos organizados em 8 categorias.</p>
@@ -1689,10 +1650,7 @@
 <strong>Bridge</strong>
 <p>BepInEx / bridge local LivePlay</p>
 </article>
-<article>
-<strong>Porta local</strong>
-<p><code>35954</code></p>
-</article>
+
 <article>
 <strong>Comandos</strong>
 <p>128 comandos organizados em 21 categorias.</p>
@@ -2301,7 +2259,6 @@
 </div>
 </div>
 </details>
-
 <details class="minecraft-plugin-detail command-plugin-detail game-command-detail" id="only-climb-details">
 <summary>
 <span>
@@ -2329,10 +2286,7 @@
 <strong>Bridge</strong>
 <p>UE4SS com fila local LivePlay e heartbeat do mod.</p>
 </article>
-<article>
-<strong>Porta local</strong>
-<p><code>35955</code> quando o bridge HTTP está disponível; fallback por arquivo local.</p>
-</article>
+
 <article>
 <strong>Comandos</strong>
 <p>29 comandos organizados em 7 categorias.</p>
@@ -2607,7 +2561,6 @@
 <p>Eventos da live podem acionar animais e comandos de sobrevivência para criar tensão em tempo real.</p>
 </div>
 </article>
-
 <article class="showcase-card showcase-card-contain-image">
 <img alt="Valheim" decoding="async" height="1024" loading="lazy" src="./assets/images/spawn-yagluth.webp" width="1024"/>
 <div>
@@ -2616,7 +2569,6 @@
 <p>Eventos da live podem invocar bosses, criaturas e raids em tempo real.</p>
 </div>
 </article>
-
 <article class="showcase-card showcase-card-contain-image">
 <img alt="Giant Player no Only Climb" decoding="async" height="512" loading="lazy" src="./assets/images/only-climb-giant-player.webp" width="512"/>
 <div>
@@ -2625,7 +2577,6 @@
 <p>Transforme o personagem e crie momentos engraçados durante a escalada.</p>
 </div>
 </article>
-
 </div>
 </section>
 <section class="section gameplay-gallery">
@@ -2665,14 +2616,12 @@
 <div class="gameplay-item">
 <img alt="Valheim" decoding="async" height="1024" loading="lazy" src="./assets/images/spawn-eikthyr.webp" width="1024"/>
 </div>
-
 <div class="gameplay-item">
 <img alt="Giant Player no Only Climb" decoding="async" height="512" loading="lazy" src="./assets/images/only-climb-giant-player.webp" width="512"/>
 </div>
 <div class="gameplay-item">
 <img alt="Super Jump no Only Climb" decoding="async" height="512" loading="lazy" src="./assets/images/only-climb-super-jump.webp" width="512"/>
 </div>
-
 <div class="gameplay-item">
 <img alt="Zumbis Grand Theft Auto V Legacy" decoding="async" height="675" loading="lazy" src="./assets/images/gta-zombies.webp" width="1200"/>
 </div>
@@ -2700,7 +2649,7 @@
 <li>1 servidor</li>
 <li>Backup manual</li>
 </ul>
-<a class="btn ghost full" href="#download" data-coming-soon="download">Download em breve</a>
+<a class="btn ghost full" data-coming-soon="download" href="#download">Download em breve</a>
 </article>
 <article class="price-card pro" id="assinar-pro">
 <div class="price-badge">PRO</div>
@@ -2715,7 +2664,7 @@
 <li>Plugins automáticos</li>
 <li>Mais limites e recursos</li>
 </ul>
-<a class="btn primary full" href="#planos" data-coming-soon="pro">PRO em breve</a>
+<a class="btn primary full" data-coming-soon="pro" href="#planos">PRO em breve</a>
 </article>
 </div>
 <div aria-label="Como funciona a assinatura PRO" class="checkout-flow">
@@ -2774,7 +2723,6 @@
 </table>
 </div>
 </div>
-
 </section>
 <section class="section compatibility">
 <div class="section-head">
@@ -2854,8 +2802,8 @@
 <p>Instale no Windows, faça login e conecte sua live TikTok. O download e a assinatura PRO serão liberados em breve.</p>
 </div>
 <div class="download-actions">
-<a class="btn primary big" href="#" id="downloadButton" data-coming-soon="download">Download em breve</a>
-<a class="btn glass big" href="#planos" data-coming-soon="pro">PRO em breve</a>
+<a class="btn primary big" data-coming-soon="download" href="#" id="downloadButton">Download em breve</a>
+<a class="btn glass big" data-coming-soon="pro" href="#planos">PRO em breve</a>
 </div>
 </section>
 </main>
