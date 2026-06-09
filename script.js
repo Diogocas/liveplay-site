@@ -171,3 +171,63 @@ downloadButton?.addEventListener("click", (event) => {
 
   window.location.href = LIVEPLAY_CONFIG.DOWNLOAD_URL;
 });
+
+// Mantém todos os blocos de jogos fechados ao abrir o site.
+// Ao clicar no card ou no atalho de um jogo, abre apenas o bloco correspondente.
+(() => {
+  const gameDetailSelector = ".game-command-detail[id]";
+  const getGameDetails = () => Array.from(document.querySelectorAll(gameDetailSelector));
+
+  const closeAllGameDetails = () => {
+    getGameDetails().forEach((detail) => {
+      detail.open = false;
+    });
+  };
+
+  const openGameDetail = (hash, shouldScroll = true) => {
+    if (!hash || !hash.startsWith("#")) return false;
+
+    const target = document.querySelector(hash);
+    if (!(target instanceof HTMLDetailsElement) || !target.matches(gameDetailSelector)) {
+      return false;
+    }
+
+    closeAllGameDetails();
+    target.open = true;
+
+    if (shouldScroll) {
+      window.requestAnimationFrame(() => {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+
+    return true;
+  };
+
+  const setupGameCardToggles = () => {
+    closeAllGameDetails();
+
+    document.querySelectorAll('a[href^="#"]').forEach((link) => {
+      link.addEventListener("click", (event) => {
+        const href = link.getAttribute("href") || "";
+        if (!href.endsWith("-details")) return;
+
+        if (openGameDetail(href, true)) {
+          event.preventDefault();
+          history.replaceState(null, "", href);
+        }
+      });
+    });
+
+    if (window.location.hash && window.location.hash.endsWith("-details")) {
+      openGameDetail(window.location.hash, false);
+    }
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", setupGameCardToggles);
+  } else {
+    setupGameCardToggles();
+  }
+})();
+

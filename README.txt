@@ -54,3 +54,5 @@ Atualização aplicada:
 - A comparação FREE x PRO recebeu a linha de Green Hell.
 - As imagens inferiores de Sons Of The Forest foram trocadas por imagens de personagens/mutantes.
 - Foram adicionadas imagens de Jaguar/Puma e logo Green Hell.
+
+Atualização: os detalhes dos jogos agora iniciam fechados. Ao clicar no card ou no atalho de cada jogo, o bloco correspondente abre automaticamente e os outros ficam fechados.
