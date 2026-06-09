@@ -161,14 +161,14 @@
 <strong>Minecraft</strong>
 <small>Plugins oficiais, templates prontos, servidores, mobs, TNT, baús, kits, armadilhas, minigames e comandos completos para live interativa.</small>
 </span>
-<span class="plugin-meta"><em>5 plugins / templates oficiais</em></span>
+<span class="plugin-meta"><em>6 plugins / templates oficiais</em></span>
 </summary>
 <div class="plugin-body">
 <div class="game-doc-hero minecraft-game-hero">
 <div>
 <span class="minecraft-kicker">Minecraft no LivePlay</span>
 <h3>Plugins, templates e modos oficiais do Minecraft</h3>
-<p>Presentes, likes, follows, shares e comandos manuais podem acionar mobs, TNT, baús, kits, armadilhas, borda, caixa de bedrock, ondas e minigames usando os plugins oficiais do LivePlay.</p>
+<p>Presentes, likes, follows, shares e comandos manuais podem acionar mobs, TNT, baús, kits, ilhas OneBlock, armadilhas, borda, caixa de bedrock, ondas e minigames usando os plugins oficiais do LivePlay.</p>
 <div class="minecraft-flow">
 <span>TikTok Live</span>
 <strong>→</strong>
@@ -201,6 +201,11 @@
 <span class="plan-pill pro-pill">PRO</span>
 <strong>Tesouro</strong>
 <p>Template do minigame Treasure Arena, com mobs, aliados, armadilhas, baús e recompensas.</p>
+</article>
+<article>
+<span class="plan-pill pro-pill">PRO</span>
+<strong>OneBlock</strong>
+<p>Template do LivePlayOneBlock para ilha única, mobs nomeados, TNT, recompensas, kit lendário, dog domado e eventos da live.</p>
 </article>
 <article>
 <span class="plan-pill free-pill">FREE</span>
@@ -444,6 +449,78 @@
 <tr><td><code>/tesouro magma_cube</code></td><td>Removido. Não usar em modelos novos.</td></tr>
 <tr><td><code>/tesouro mob</code></td><td>Removido. Não usar em modelos novos.</td></tr>
 <tr><td><code>/tesouro warden</code></td><td>Removido. Para invocar o Warden, use /tesouro boss.</td></tr>
+</tbody></table></div>
+</details>
+</div>
+</div>
+</details><details class="minecraft-plugin-detail command-plugin-detail">
+<summary>
+<span>
+<strong>LivePlayOneBlock</strong>
+<small>Modo OneBlock interativo com ilhas, mobs nomeados, TNT, recompensas, kit lendário e dog domado</small>
+</span>
+<span class="plugin-meta"><b class="plan-pill pro-pill">PRO</b><em>1.21</em></span>
+</summary>
+<div class="plugin-body">
+<p>Plugin oficial de OneBlock para lives interativas. O jogador cria uma ilha OneBlock e eventos do TikTok Live podem invocar mobs com o nome do espectador, gerar TNT, entregar recompensas, chamar aliados e criar ilhas extras durante a transmissão.</p>
+<div class="plugin-usage-box">
+<strong>Comando base</strong>
+<code>/ob &lt;ação&gt;</code>
+</div>
+<div class="plugin-mini-info">
+<strong>Funcionamento do modo</strong>
+<ul>
+<li>O jogador cria e inicia a ilha com comandos simples do OneBlock.</li>
+<li>Comandos enviados pelo LivePlay usam <code>{nickname}</code> para mostrar o nome do espectador em cima do mob.</li>
+<li>Comandos digitados diretamente no jogo também funcionam sem nickname.</li>
+<li>O modo inclui mobs hostis, TNT, kits, maçã encantada, dog domado e golem.</li>
+</ul>
+</div>
+<div class="command-groups">
+<details class="command-group" open="">
+<summary>Comandos principais da ilha <span>6 comandos</span></summary>
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/ob create</code></td><td>Cria a ilha OneBlock do jogador.</td></tr>
+<tr><td><code>/ob start</code></td><td>Inicia ou retorna para a ilha OneBlock.</td></tr>
+<tr><td><code>/ob pause</code></td><td>Pausa o modo e tira o jogador da ilha sem apagar o progresso.</td></tr>
+<tr><td><code>/ob delete</code></td><td>Apaga a ilha e limpa o progresso do OneBlock.</td></tr>
+<tr><td><code>/ob ilha</code></td><td>Cria uma ilha extra/interativa ao redor da ilha principal durante a live.</td></tr>
+<tr><td><code>/ob help</code></td><td>Mostra a ajuda dos comandos do LivePlayOneBlock.</td></tr>
+</tbody></table></div>
+</details>
+<details class="command-group">
+<summary>Mobs da live <span>14 comandos</span></summary>
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/ob zombie {nickname}</code></td><td>Invoca um zumbi com nome colorido opcional do espectador.</td></tr>
+<tr><td><code>/ob skeleton {nickname}</code></td><td>Invoca um esqueleto com nome opcional.</td></tr>
+<tr><td><code>/ob spider {nickname}</code></td><td>Invoca uma aranha com nome opcional.</td></tr>
+<tr><td><code>/ob creeper {nickname}</code></td><td>Invoca um creeper com nome opcional.</td></tr>
+<tr><td><code>/ob witch {nickname}</code></td><td>Invoca uma bruxa com nome opcional.</td></tr>
+<tr><td><code>/ob ravager {nickname}</code></td><td>Invoca um ravager/devastador com nome opcional.</td></tr>
+<tr><td><code>/ob piglin {nickname}</code></td><td>Invoca um piglin com proteção para não zombificar no mundo normal.</td></tr>
+<tr><td><code>/ob piglin brute {nickname}</code></td><td>Invoca um piglin brute com nome opcional.</td></tr>
+<tr><td><code>/ob vindicator {nickname}</code></td><td>Invoca um vindicator com machado na mão.</td></tr>
+<tr><td><code>/ob pillager {nickname}</code></td><td>Invoca um pillager com nome opcional.</td></tr>
+<tr><td><code>/ob wither_skeleton {nickname}</code></td><td>Invoca um wither skeleton com nome opcional.</td></tr>
+<tr><td><code>/ob zombified_piglin {nickname}</code></td><td>Invoca um zombified piglin com nome opcional.</td></tr>
+<tr><td><code>/ob hoglin {nickname}</code></td><td>Invoca um hoglin com proteção para não virar zoglin no mundo normal.</td></tr>
+<tr><td><code>/ob ghast {nickname}</code></td><td>Invoca um ghast com nome opcional.</td></tr>
+</tbody></table></div>
+</details>
+<details class="command-group">
+<summary>Recompensas e caos <span>4 comandos</span></summary>
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/ob kitlendario {nickname}</code></td><td>Entrega kit lendário com netherita encantada, ferramentas, escudo, arco, comida e maçãs encantadas.</td></tr>
+<tr><td><code>/ob diamondset {nickname}</code></td><td>Entrega set de diamante, espada, picareta e recompensa de suporte.</td></tr>
+<tr><td><code>/ob enchantedapple {nickname}</code></td><td>Entrega uma maçã dourada encantada ao jogador da ilha.</td></tr>
+<tr><td><code>/ob tnt {nickname}</code></td><td>Invoca TNT na ilha como evento de caos da live.</td></tr>
+</tbody></table></div>
+</details>
+<details class="command-group">
+<summary>Aliados especiais <span>2 comandos</span></summary>
+<div class="command-table-wrap"><table class="command-table"><tbody>
+<tr><td><code>/ob dog</code></td><td>Invoca um cachorro domesticado para o jogador da ilha.</td></tr>
+<tr><td><code>/ob golem</code></td><td>Invoca um golem de ferro aliado na ilha.</td></tr>
 </tbody></table></div>
 </details>
 </div>
@@ -2777,7 +2854,7 @@
 </details>
 <details>
 <summary>Quais plugins Minecraft são FREE e quais são PRO?</summary>
-<p>Bedrock Box, Border e Surto Solar são FREE. Survival e Treasure Arena/Tesouro são PRO. Quando existe versão 1.21 e 1.20.1, a descrição é única porque as duas versões têm a mesma função.</p>
+<p>Bedrock Box, Border e Surto Solar são FREE. Survival, Treasure Arena/Tesouro e LivePlayOneBlock são PRO. Quando existe versão 1.21 e 1.20.1, a descrição é única porque as duas versões têm a mesma função.</p>
 </details>
 <details>
 <summary>Tem versão grátis?</summary>
